@@ -1,0 +1,57 @@
+*****************
+Ocean Circulation
+*****************
+
+
+.. toctree::
+   :maxdepth: 2
+
+
+.. .. contents::
+..    :local:
+..    :depth: 1
+
+
+`RAPID-AMOC <https://rapid.ac.uk/>`_ 
+_____________________________________
+
+
+is a transatlantic monitoring system that has provided continuous observations of the meridional overturning circulation since 2004. I have worked on numerous modelling projects in support of RAPID since 2006.
+
+Some of my relevant papers:
+
+*  `Mechanisms for Late 20th and Early 21st Century Decadal AMOC Variability <https://doi.org/10.1029/2021jc017865>`_ Alex Megann, Adam Blaker, Simon Josey, Adrian New, Bablu Sinha, 2021, Journal of Geophysical Research - Oceans - Article
+
+*  `The accuracy of estimates of the overturning circulation from basin-wide mooring arrays <https://doi.org/10.1016/j.pocean.2017.12.001>`_ B. Sinha, D.A. Smeed, G. McCarthy, B.I. Moat, S.A. Josey, J.J.-M. Hirschi, E. Frajka-Williams, A.T. Blaker, D. Rayner, G. Madec, 2018, Progress In Oceanography - Article
+
+*  `Major variations in subtropical North Atlantic heat transport at short (5 day) timescales and their causes <https://doi.org/10.1002/2016jc011660>`_ B. I. Moat, S. A. Josey, B. Sinha, A. T. Blaker, D. A. Smeed, G. D. McCarthy, W. E. Johns, J. J.‐M. Hirschi, E. Frajka‐Williams, D. Rayner, A. Duchez, A. C. Coward, 2016, Journal of Geophysical Research - Oceans - Article
+
+*  `Historical analogues of the recent extreme minima observed in the Atlantic meridional overturning circulation at 26°N <https://doi.org/10.1007/s00382-014-2274-6>`_ Adam T. Blaker, Joël J.-M. Hirschi, Gerard McCarthy, Bablu Sinha, Sarah Taws, Robert Marsh, Andrew Coward, Beverly de Cuevas, 2014, Climate Dynamics - Article
+
+`Near Inertial Waves <https://www.youtube.com/watch?v=YiwKr8jedJc>`_ 
+__________________________________________________________________________
+
+have been a research interest of mine since I first noticed these striking features in the ocean simulations I was using.
+
+Some of my relevant papers:
+
+* `The Atlantic Meridional Overturning Circulation in High‐Resolution Models <https://doi.org/10.1029/2019jc015522>`_ Joël J.‐M. Hirschi, Bernard Barnier, Claus Böning, Arne Biastoch, Adam T. Blaker, Andrew Coward, Sergey Danilov, Sybren Drijfhout, Klaus Getzlaff, Stephen M. Griffies, Hiroyasu Hasumi, Helene Hewitt, Doroteaciro Iovino, Takao Kawasaki, Andrew E. Kiss, Nikolay Koldunov, Alice Marzocchi, Jennifer V. Mecking, Ben Moat, Jean‐Marc Molines, Paul G. Myers, Thierry Penduff, Malcolm Roberts, Anne‐Marie Treguier, Dmitry V. Sein, Dmitry Sidorenko, Justin Small, Paul Spence, LuAnne Thompson, Wilbert Weijer, Xiaobiao Xu, 2020, Journal of Geophysical Research - Oceans - Article
+
+*  `On the Near-Inertial Resonance of the Atlantic Meridional Overturning Circulation <https://doi.org/10.1175/jpo-d-13-092.1>`_ Florian Sévellec, Joël J.-M. Hirschi, Adam T. Blaker, 2013, Journal of Physical Oceanography - Article
+
+*  `Large near-inertial oscillations of the Atlantic meridional overturning circulation <https://doi.org/10.1016/j.ocemod.2011.11.008>`_ Adam T. Blaker, Joël J-M. Hirschi, Bablu Sinha, Beverly de Cuevas, Steven Alderson, Andrew Coward, Gurvan Madec, 2012, Ocean Modelling - Article
+
+
+Equatorial planetary waves
+_____________________________________
+
+Related to the NIWs are a special subset of equatorially trapped planetary waves. 
+
+Some of my relevant papers:
+
+*  `TAO data support the existence of large high frequency variations in cross-equatorial overturning circulation <https://doi.org/10.1002/essoar.10508604.1>`_  Lois Elizabeth Baker, Mike Bell, Adam Tobias Blaker, 2021, ESSOAr - Preprint
+
+*  `Wind-Driven Oscillations in the Meridional Overturning Circulation near the equator. Part I: Numerical Models <https://doi.org/10.1175/jpo-d-19-0296.1>`_ Adam T. Blaker, Joël J.-M. Hirschi, Michael J. Bell, Amy Bokota, 2021, Journal of Physical Oceanography - Article
+
+*  `Wind-Driven Oscillations in Meridional Overturning Circulations near the Equator. Part II: Idealized Simulations <https://doi.org/10.1175/jpo-d-19-0297.1>`_  Michael J. Bell, Adam T. Blaker, Joël J.-M. Hirschi, 2021, Journal of Physical Oceanography - Article  
+

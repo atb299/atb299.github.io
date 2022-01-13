@@ -1,0 +1,14 @@
+******************
+The climate system
+******************
+
+I have a broad interest in all aspects of the climate system. My research ranges from fast ocean processes (waves) and teleconnections, to natural variability on seasonal to decadal timescales, and to longer term variability and trends such as those caused by global warming.
+
+
+Some of my relevant papers:
+
+* `Model‐Derived Uncertainties in Deep Ocean Temperature Trends Between 1990 and 2010 <https://doi.org/10.1029/2018jc014225>`_ F. K. Garry, E. L. McDonagh, A. T. Blaker, C. D. Roberts, D. G. Desbruyères, E. Frajka‐Williams, B. A. King, 2019, Journal of Geophysical Research - Oceans - Article
+
+* `Improved estimates of water cycle change from ocean salinity: the key role of ocean warming <https://doi.org/10.1088/1748-9326/aace42>`_ Jan D Zika, Nikolaos Skliris, Adam T Blaker, Robert Marsh, A J George Nurser, Simon A Josey, 2018, Environmental Research Letters - Article
+
+* `Surface warming hiatus caused by increased heat uptake across multiple ocean basins <https://doi.org/10.1002/2014gl061456>`_ S. S. Drijfhout, A. T. Blaker, S. A. Josey, A. J. G. Nurser, B. Sinha, M. A. Balmaseda, 2014, Geophysical Research Letters - Article

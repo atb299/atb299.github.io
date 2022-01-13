@@ -1,0 +1,81 @@
+.. Adam Blaker's master file, created by
+   sphinx-quickstart on Mon Jan 10 20:00:29 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+.. Adam Blaker
+.. =====================================================
+
+.. toctree::
+   :maxdepth: 2
+
+
+.. cssclass:: longtable
+
++--------------------+--------------------+--------------------+
+|                    | |Adam Blaker|      |                    |
++--------------------+--------------------+--------------------+
+
+.. |Adam Blaker|        image:: /_static/Blaker_Adam.jpg
+
+I am a research scientist in the `Marine Systems Modelling <https://noc.ac.uk/science/research-areas/marine-systems-modelling>`_ group, `National Oceanography Centre <https://noc.ac.uk/>`_. 
+
+
+=====================================================
+
+
+
+Research
+=====================================================
+
+The main focus of my research is to improve our understanding of the mean state and variability of the ocean and climate system. I use computer models and observational datasets, develop models and model configurations, and I am interested in understanding the uncertanties and errors associated with the models and the way they are used.
+
+=====================================================
+
+.. include:: ocean.rst
+
+=====================================================
+
+.. include:: modelling.rst
+
+=====================================================
+
+.. include:: uncertainty.rst
+
+=====================================================
+
+.. include:: climate.rst
+
+=====================================================
+
+
+Publications
+=====================================================
+
+
+   - `Google Scholar <https://scholar.google.com/citations?hl=en&user=NC69CIwAAAAJ&view_op=list_works&sortby=pubdate>`_
+   - `Dimensions <https://app.dimensions.ai/discover/publication?and_facet_researcher=ur.010144233545.47>`_
+   - `ORCID <https://orcid.org/0000-0001-5454-0131>`_
+
+
+
+=====================================================
+
+
+Interests
+=====================================================
+
+.. include:: aikido.rst
+
+
+.. note::
+
+   This page is under active development.
+
+
+.. Indices and tables
+.. =====================================================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`

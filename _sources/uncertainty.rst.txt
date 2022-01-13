@@ -1,0 +1,15 @@
+*****************************************
+Error and uncertainty in numerical models
+*****************************************
+
+
+I have a keen in understanding and reducing errors and sources of uncertainty in numerical models and the simulations and projections they produce. Much of this work has been in collaboration with `Danny Williamson <https://github.com/BayesExeter>`_ 
+
+Some of my relevant papers:
+
+* `Tuning without over-tuning: parametric uncertainty quantification for the NEMO ocean model <https://doi.org/10.5194/gmd-10-1789-2017>`_ Daniel B. Williamson, Adam T. Blaker, Bablu Sinha, 2017, Geoscientific Model Development - Article
+
+*  `Identifying and removing structural biases in climate models with history matching <https://doi.org/10.1007/s00382-014-2378-z>`_ Daniel Williamson, Adam T. Blaker, Charlotte Hampton, James Salter, 2014, Climate Dynamics - Article
+
+*  `History matching for exploring and reducing climate model parameter space using observations and a large perturbed physics ensemble <https://doi.org/10.1007/s00382-013-1896-4>`_ Daniel Williamson, Michael Goldstein, Lesley Allison, Adam Blaker, Peter Challenor, Laura Jackson, Kuniko Yamazaki, 2013, Climate Dynamics - Article
+

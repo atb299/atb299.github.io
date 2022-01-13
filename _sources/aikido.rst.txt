@@ -1,0 +1,12 @@
+*****************
+Aikido
+*****************
+
+.. toctree::
+   :maxdepth: 2
+
+.. contents::
+   :local:
+   :depth: 1
+
+I practise Aikido at the `Southampton Shiseijan dojo <https://sites.google.com/view/unisouthamptonaikido/home>`_  (`BAF <https://bafonline.org.uk/?i=1>`_ affiliated) with the chief instructor Alex Megann (6 Dan). I teach classes on Friday evening approximately once per month.
