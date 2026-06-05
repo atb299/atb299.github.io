@@ -1,246 +1,2590 @@
-
 <!DOCTYPE html>
+<html lang="en" data-theme="light">
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Adam Blaker — Research Scientist in the Ocean Modelling group at the National Oceanography Centre (NOC). Studying ocean circulation, climate variability, and numerical model uncertainty.">
+  <meta name="keywords"
+    content="Adam Blaker, oceanography, climate science, AMOC, ocean modelling, NEMO, National Oceanography Centre, NOC, researcher">
+  <meta name="author" content="Adam Blaker">
+  <link rel="canonical" href="https://atb299.github.io/">
 
-    <title>Research &#8212; Adam Blaker 0 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/pyramid.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
-<!--[if lte IE 6]>
-<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
-<![endif]-->
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adam Blaker — Oceanography &amp; Climate Science">
+  <meta property="og:description"
+    content="Research Scientist at the National Oceanography Centre, studying ocean circulation, climate variability, and numerical model uncertainty.">
+  <meta property="og:url" content="https://atb299.github.io/">
+  <meta property="og:image" content="https://atb299.github.io/assets/profile.jpg">
+  <meta property="og:site_name" content="Adam Blaker">
 
-  </head><body>
+  <title>Adam Blaker | Oceanography &amp; Climate Science</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="nav-item nav-item-0"><a href="#">Adam Blaker 0 documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Research</a></li> 
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root,
+    [data-theme="light"] {
+      --deep: #2d3640;
+      --mid: #4a5968;
+      --teal: #6a7d8b;
+      --teal-light: #8599a6;
+      --sand: #f0ece6;
+      --sand-dark: #e0d8ce;
+      --warm: #b89e7e;
+      --text: #2d3640;
+      --text-light: #5c6a75;
+      --white: #f8f6f2;
+      --coral: #a07858;
+      --border: rgba(45, 54, 64, 0.07);
+      --card-shadow: rgba(45, 54, 64, 0.06);
+      --font-serif: 'Lora', serif;
+      --font-sans: 'Inter', sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --deep: #c8cdd3;
+      --mid: #8c9aaa;
+      --teal: #8fa5b3;
+      --teal-light: #a3b8c4;
+      --sand: #1c2028;
+      --sand-dark: #242a33;
+      --warm: #c4a882;
+      --text: #c0c8d0;
+      --text-light: #7e8d9c;
+      --white: #141820;
+      --coral: #c9a27c;
+      --border: rgba(180, 195, 210, 0.08);
+      --card-shadow: rgba(0, 0, 0, 0.3);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(248, 246, 242, 0.9);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.3s, background 0.3s, border-color 0.3s;
+    }
+
+    [data-theme="dark"] nav {
+      background: rgba(20, 24, 32, 0.93);
+    }
+
+    nav.scrolled {
+      box-shadow: 0 2px 30px rgba(27, 45, 69, 0.08);
+    }
+
+    .nav-inner {
+      max-width: clamp(1100px, 75vw, 1400px);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    .nav-name {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--deep);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-light);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.25s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 1.5px;
+      background: var(--teal);
+      transform: scaleX(0);
+      transition: transform 0.25s;
+      transform-origin: left;
+    }
+
+    .nav-links a:hover {
+      color: var(--deep);
+    }
+
+    .nav-links a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .nav-icons {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .nav-icons a {
+      color: var(--text-light);
+      font-size: 1rem;
+      transition: color 0.25s;
+      text-decoration: none;
+    }
+
+    .nav-icons a:hover {
+      color: var(--teal);
+    }
+
+    .theme-switch {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      width: 56px;
+      height: 28px;
+      flex-shrink: 0;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+
+    .theme-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+
+    .theme-switch .slider {
+      position: absolute;
+      inset: 0;
+      background: var(--sand-dark);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .theme-switch .slider::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--teal);
+      transition: transform 0.3s;
+      transform: translateY(-50%);
+    }
+
+    .theme-switch input:checked~.slider {
+      background: var(--sand-dark);
+    }
+
+    .theme-switch input:checked~.slider::before {
+      transform: translateY(-50%) translateX(28px);
+    }
+
+    .theme-switch .switch-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.7rem;
+      z-index: 1;
+      pointer-events: none;
+      color: var(--text-light);
+      transition: opacity 0.3s;
+    }
+
+    .theme-switch .switch-sun {
+      left: 8px;
+    }
+
+    .theme-switch .switch-moon {
+      right: 9px;
+    }
+
+    [data-theme="light"] .switch-sun {
+      opacity: 1;
+      color: var(--coral);
+    }
+
+    [data-theme="light"] .switch-moon {
+      opacity: 0.35;
+    }
+
+    [data-theme="dark"] .switch-sun {
+      opacity: 0.35;
+    }
+
+    [data-theme="dark"] .switch-moon {
+      opacity: 1;
+      color: var(--teal-light);
+    }
+
+    .theme-switch:hover .slider {
+      border-color: var(--teal);
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--deep);
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: 7rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(16, 24, 32, 0.55) 0%, rgba(16, 24, 32, 0.8) 100%);
+    }
+
+    [data-theme="dark"] .hero-overlay {
+      background: linear-gradient(to bottom, rgba(10, 14, 20, 0.7) 0%, rgba(10, 14, 20, 0.95) 100%);
+    }
+
+    .hero-inner {
+      max-width: clamp(1100px, 75vw, 1400px);
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr clamp(280px, 22vw, 420px);
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-text {
+      color: #fff;
+    }
+
+    .hero-text h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .hero-text h1 span {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--teal-light);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 0.8rem;
+      font-family: var(--font-sans);
+    }
+
+    .hero-text .tagline {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.7;
+      max-width: 580px;
+      margin: 1.2rem 0 0.6rem;
+      animation: fadeUp 0.8s ease 0.15s both;
+    }
+
+    .hero-location {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.8s ease 0.22s both;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .hero-location .location-pin {
+      color: var(--teal-light);
+      opacity: 0.8;
+      flex-shrink: 0;
+    }
+
+    .hero-links {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      animation: fadeUp 0.8s ease 0.3s both;
+    }
+
+    .hero-links a {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.7rem 1.8rem;
+      border-radius: 4px;
+      transition: all 0.25s;
+    }
+
+    .hero-links .primary {
+      background: var(--coral);
+      color: #fff;
+    }
+
+    .hero-links .primary:hover {
+      background: var(--warm);
+      color: #fff;
+    }
+
+    .hero-links .secondary {
+      border: 1.5px solid var(--teal-light);
+      color: #fff;
+      background: transparent;
+      backdrop-filter: blur(5px);
+    }
+
+    .hero-links .secondary:hover {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: #fff;
+    }
+
+    .hero-photo {
+      animation: fadeUp 0.8s ease 0.2s both;
+      position: relative;
+    }
+
+    .hero-photo::before {
+      content: '';
+      position: absolute;
+      inset: -12px;
+      border: 2px solid var(--teal-light);
+      border-radius: 16px;
+      opacity: 0.35;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      display: block;
+    }
+
+    /* ─── SECTION BASE ─── */
+    section {
+      padding: clamp(3rem, 5vw, 6rem) 2rem;
+    }
+
+    .section-inner {
+      max-width: clamp(1100px, 75vw, 1400px);
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+      font-weight: 400;
+      color: var(--deep);
+      margin-bottom: 2rem;
+      line-height: 1.3;
+    }
+
+    /* ─── WAVE DIVIDER ─── */
+    .wave-divider {
+      height: 60px;
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+      margin-top: -1px;
+    }
+
+    .wave-divider svg {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      fill: var(--sand);
+    }
+
+    [data-theme="dark"] .wave-divider svg {
+      fill: var(--sand);
+    }
+
+    /* ─── ABOUT ─── */
+    #about {
+      background: var(--sand);
+      transition: background 0.3s;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      margin-bottom: 1.2rem;
+      color: var(--text-light);
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    .interests-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 2rem;
+    }
+
+    .interests-tags span {
+      font-size: 0.8rem;
+      padding: 0.45rem 1.1rem;
+      border-radius: 100px;
+      background: rgba(106, 125, 139, 0.12);
+      color: var(--teal);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .interests-tags span:hover {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    .about-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .detail-card {
+      padding: 1.8rem;
+      border-radius: 10px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 4px var(--card-shadow);
+      transition: box-shadow 0.3s, background 0.3s, border-color 0.3s, transform 0.3s;
+    }
+
+    .detail-card:hover {
+      box-shadow: 0 10px 30px var(--card-shadow);
+      transform: translateY(-2px);
+    }
+
+    .detail-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--deep);
+      margin-bottom: 0.4rem;
+    }
+
+    .detail-card p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .detail-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .detail-card .institution {
+      color: var(--teal);
+      font-weight: 600;
+      font-size: 0.88rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .detail-card .institution:hover {
+      color: var(--coral);
+    }
+
+    .detail-card ul {
+      margin: 0.6rem 0;
+      padding-left: 1.5rem;
+    }
+
+    .detail-card li {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 0.4rem;
+    }
+
+    .detail-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .detail-card li::marker {
+      color: var(--teal);
+    }
+
+    /* ─── RESEARCH FOCUS ─── */
+    #research {
+      background: var(--white);
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .research-card {
+      padding: 2.2rem;
+      border-radius: 12px;
+      background: var(--sand);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .research-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px var(--card-shadow);
+      border-color: var(--teal-light);
+    }
+
+    .research-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--deep);
+      font-weight: 500;
+      margin-bottom: 1rem;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .research-card p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .research-subtopics {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .subtopic-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+    }
+
+    .subtopic-item i {
+      color: var(--coral);
+      margin-top: 0.25rem;
+      font-size: 0.75rem;
+    }
+
+    .subtopic-item strong {
+      color: var(--deep);
+    }
+
+    /* ─── PUBLICATIONS ─── */
+    #publications {
+      background: var(--sand);
+    }
+
+    .pub-filter {
+      display: flex;
+      gap: 0.8rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.5rem 1.4rem;
+      border-radius: 100px;
+      border: 1.5px solid var(--teal);
+      background: transparent;
+      color: var(--teal);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s;
+      letter-spacing: 0.04em;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    .pub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .pub-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5rem 1.8rem;
+      border-radius: 8px;
+      background: var(--white);
+      border-left: 4px solid var(--teal);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+
+    .pub-item:hover {
+      border-left-color: var(--coral);
+      box-shadow: 0 8px 24px var(--card-shadow);
+      transform: translateY(-2px);
+    }
+
+    .pub-item .pub-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 0.4rem;
+    }
+
+    .pub-item h4 {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--deep);
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-item .pub-authors {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      margin-bottom: 0.3rem;
+    }
+
+    .pub-item .pub-journal {
+      font-size: 0.8rem;
+      color: var(--teal);
+      font-style: italic;
+    }
+
+    .pub-item .pub-status {
+      display: inline-block;
+      font-size: 0.65rem;
+      padding: 0.15rem 0.6rem;
+      border-radius: 100px;
+      background: rgba(196, 112, 90, 0.12);
+      color: var(--coral);
+      font-weight: 600;
+      margin-top: 0.6rem;
+      align-self: flex-start;
+    }
+
+    /* ─── MODAL ─── */
+    .pub-modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(45, 54, 64, 0.4);
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    [data-theme="dark"] .pub-modal-overlay {
+      background: rgba(0, 0, 0, 0.65);
+    }
+
+    .pub-modal-overlay.active {
+      display: flex;
+    }
+
+    .pub-modal {
+      position: relative;
+      width: 100%;
+      max-width: 820px;
+      max-height: 85vh;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+      overflow-y: auto;
+      padding: 2.2rem;
+    }
+
+    .pub-modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: var(--sand);
+      color: var(--text-light);
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .pub-modal-close:hover {
+      background: var(--coral);
+      color: #fff;
+    }
+
+    .pub-modal-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-modal-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--deep);
+      line-height: 1.4;
+      margin-bottom: 0.8rem;
+      padding-right: 2rem;
+    }
+
+    .pub-modal-authors {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .pub-modal-authors strong {
+      color: var(--deep);
+      font-weight: 600;
+    }
+
+    .pub-modal-journal-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .pub-modal-journal {
+      font-size: 0.85rem;
+      color: var(--teal);
+      font-style: italic;
+    }
+
+    .pub-modal-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin-bottom: 1.2rem;
+    }
+
+    .pub-modal-abstract-heading {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--deep);
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-modal-abstract {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.65;
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .pub-modal-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.65rem 1.6rem;
+      border-radius: 4px;
+      background: var(--coral);
+      color: #fff;
+      transition: background 0.25s;
+    }
+
+    .pub-modal-link:hover {
+      background: var(--warm);
+      color: #fff;
+    }
+
+    /* ─── INTERESTS (AIKIDO) ─── */
+    #interests {
+      background: var(--white);
+    }
+
+    .interests-box {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.5rem;
+      border-radius: 12px;
+      background: var(--sand);
+      border: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 2rem;
+      align-items: center;
+      transition: all 0.3s;
+    }
+
+    .interests-box:hover {
+      box-shadow: 0 10px 30px var(--card-shadow);
+      border-color: var(--teal-light);
+    }
+
+    .interests-icon-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--teal-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--coral);
+      font-size: 2.2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .interests-content h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--deep);
+      margin-bottom: 0.5rem;
+    }
+
+    .interests-content p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.65;
+    }
+
+    .interests-content a {
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .interests-content a:hover {
+      color: var(--coral);
+    }
+
+    /* ─── SKILLS ─── */
+    #skills {
+      background: var(--sand);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-group {
+      padding: 1.8rem;
+      border-radius: 12px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--teal);
+      box-shadow: 0 2px 4px var(--card-shadow);
+      transition: all 0.3s ease;
+    }
+
+    .skill-group:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px var(--card-shadow);
+    }
+
+    .skill-group[data-accent="programming"] {
+      border-left-color: var(--teal);
+    }
+
+    .skill-group[data-accent="data"] {
+      border-left-color: var(--warm);
+    }
+
+    .skill-group[data-accent="models"] {
+      border-left-color: var(--coral);
+    }
+
+    .skill-group[data-accent="scicomp"] {
+      border-left-color: var(--mid);
+    }
+
+    .skill-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .skill-icon-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--sand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--teal);
+      font-size: 1.1rem;
+    }
+
+    .skill-group[data-accent="programming"] .skill-icon-badge {
+      color: var(--teal);
+    }
+
+    .skill-group[data-accent="data"] .skill-icon-badge {
+      color: var(--warm);
+    }
+
+    .skill-group[data-accent="models"] .skill-icon-badge {
+      color: var(--coral);
+    }
+
+    .skill-group[data-accent="scicomp"] .skill-icon-badge {
+      color: var(--mid);
+    }
+
+    .skill-group h4 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--deep);
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .skill-pills span {
+      font-size: 0.78rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      background: var(--sand);
+      color: var(--text);
+      font-weight: 500;
+      transition: all 0.25s;
+    }
+
+    .skill-pills span:hover {
+      background: var(--teal);
+      color: #fff;
+      border-color: var(--teal);
+    }
+
+    /* ─── CONTACT ─── */
+    #contact {
+      background: #2d3640;
+      color: rgba(255, 255, 255, 0.85);
+      padding: 4rem 2rem;
+    }
+
+    [data-theme="dark"] #contact {
+      background: #181d24;
+    }
+
+    #contact .section-label {
+      color: var(--teal-light);
+    }
+
+    #contact .section-title {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-intro {
+      font-size: 1rem;
+      opacity: 0.8;
+      margin-bottom: 2rem;
+      max-width: 520px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8fadbe;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      color: rgba(255, 255, 255, 0.9);
+      transition: border-color 0.25s;
+      resize: vertical;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--teal-light);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .form-submit {
+      align-self: flex-start;
+      background: var(--coral);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.75rem 2.2rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.25s;
+      font-family: var(--font-sans);
+    }
+
+    .form-submit:hover {
+      background: var(--warm);
+    }
+
+    .contact-sidebar-title {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8fadbe;
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-link-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
+    }
+
+    .contact-link-list a {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+      padding: 0.6rem 0.8rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.25s;
+    }
+
+    .contact-link-list a:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: var(--teal-light);
+      color: #8fadbe;
+    }
+
+    .contact-link-list a i {
+      font-size: 1.1rem;
+      width: 20px;
+      text-align: center;
+      color: #8fadbe;
+    }
+
+    .contact-map {
+      margin-top: 1.8rem;
+    }
+
+    .contact-map-title {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8fadbe;
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-map iframe {
+      width: 100%;
+      height: 180px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      filter: brightness(0.85) contrast(1.1);
+    }
+
+    [data-theme="dark"] .contact-map iframe {
+      filter: brightness(0.7) contrast(1.1) invert(1) hue-rotate(200deg);
+    }
+
+    /* ─── UTILITIES ─── */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      z-index: 200;
+      background: linear-gradient(90deg, var(--teal), var(--coral));
+      width: 0%;
+      pointer-events: none;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 90;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      background: var(--teal);
+      color: #fff;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s, background 0.2s;
+      pointer-events: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .back-to-top:hover {
+      background: var(--coral);
+    }
+
+    footer {
+      background: #2d3640;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      text-align: center;
+      padding: 1.8rem 2rem;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    [data-theme="dark"] footer {
+      background: #181d24;
+    }
+
+    footer a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    footer a:hover {
+      color: var(--coral);
+      border-bottom-color: var(--coral);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(15px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media(max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-text .tagline {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-location {
+        justify-content: center;
+      }
+
+      .hero-links {
+        justify-content: center;
+      }
+
+      .hero-photo {
+        max-width: 320px;
+        margin: 0 auto;
+        order: -1;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .interests-tags {
+        justify-content: center;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pub-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .interests-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+      }
+    }
+
+    @media(max-width: 640px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(253, 251, 248, 0.98);
+        backdrop-filter: blur(20px);
+        padding: 1.5rem 2rem;
+        gap: 1.2rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      [data-theme="dark"] .nav-links {
+        background: rgba(20, 24, 32, 0.98);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .nav-icons {
+        display: none;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 3rem 1.5rem;
+      }
+
+      .pub-filter {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-name">Adam Blaker</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>  
+      <div class="nav-right">
+        <div class="nav-icons">
+          <a href="mailto:adam.blaker@noc.ac.uk" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?hl=en&user=NC69CIwAAAAJ&view_op=list_works&sortby=pubdate"
+            target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://orcid.org/0000-0001-5454-0131" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
+          <a href="https://app.dimensions.ai/discover/publication?and_facet_researcher=ur.010144233545.47"
+            target="_blank" title="Dimensions"><i class="ai ai-dimensions"></i></a>
+          <a href="https://github.com/atb299" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <label class="theme-switch" aria-label="Toggle dark mode">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+          <i class="fas fa-sun switch-icon switch-sun"></i>
+          <i class="fas fa-moon switch-icon switch-moon"></i>
+        </label>
+        <button class="hamburger" id="menuBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-  <div class="toctree-wrapper compound">
-</div>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td></td>
-<td><p><img alt="Adam Blaker" src="_images/Blaker_Adam.jpg" /></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>I am a research scientist in the <a class="reference external" href="https://noc.ac.uk/science/research-areas/marine-systems-modelling">Marine Systems Modelling</a> group, <a class="reference external" href="https://noc.ac.uk/">National Oceanography Centre</a>.</p>
-<hr class="docutils" />
-<section id="research">
-<h1>Research<a class="headerlink" href="#research" title="Permalink to this headline">¶</a></h1>
-<p>The main focus of my research is to improve our understanding of the mean state and variability of the ocean and climate system. I use computer models and observational datasets, develop models and model configurations, and I am interested in understanding the uncertanties and errors associated with the models and the way they are used.</p>
-<hr class="docutils" />
-<section id="ocean-circulation">
-<h2>Ocean Circulation<a class="headerlink" href="#ocean-circulation" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-</div>
-<section id="id1">
-<h3><a class="reference external" href="https://rapid.ac.uk/">RAPID-AMOC</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>is a transatlantic monitoring system that has provided continuous observations of the meridional overturning circulation since 2004. I have worked on numerous modelling projects in support of RAPID since 2006.</p>
-<p>Some of my relevant papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://doi.org/10.1029/2021jc017865">Mechanisms for Late 20th and Early 21st Century Decadal AMOC Variability</a> Alex Megann, Adam Blaker, Simon Josey, Adrian New, Bablu Sinha, 2021, Journal of Geophysical Research - Oceans - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1016/j.pocean.2017.12.001">The accuracy of estimates of the overturning circulation from basin-wide mooring arrays</a> B. Sinha, D.A. Smeed, G. McCarthy, B.I. Moat, S.A. Josey, J.J.-M. Hirschi, E. Frajka-Williams, A.T. Blaker, D. Rayner, G. Madec, 2018, Progress In Oceanography - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1002/2016jc011660">Major variations in subtropical North Atlantic heat transport at short (5 day) timescales and their causes</a> B. I. Moat, S. A. Josey, B. Sinha, A. T. Blaker, D. A. Smeed, G. D. McCarthy, W. E. Johns, J. J.‐M. Hirschi, E. Frajka‐Williams, D. Rayner, A. Duchez, A. C. Coward, 2016, Journal of Geophysical Research - Oceans - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1007/s00382-014-2274-6">Historical analogues of the recent extreme minima observed in the Atlantic meridional overturning circulation at 26°N</a> Adam T. Blaker, Joël J.-M. Hirschi, Gerard McCarthy, Bablu Sinha, Sarah Taws, Robert Marsh, Andrew Coward, Beverly de Cuevas, 2014, Climate Dynamics - Article</p></li>
-</ul>
-</section>
-<section id="id2">
-<h3><a class="reference external" href="https://www.youtube.com/watch?v=YiwKr8jedJc">Near Inertial Waves</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<p>have been a research interest of mine since I first noticed these striking features in the ocean simulations I was using.</p>
-<p>Some of my relevant papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://doi.org/10.1029/2019jc015522">The Atlantic Meridional Overturning Circulation in High‐Resolution Models</a> Joël J.‐M. Hirschi, Bernard Barnier, Claus Böning, Arne Biastoch, Adam T. Blaker, Andrew Coward, Sergey Danilov, Sybren Drijfhout, Klaus Getzlaff, Stephen M. Griffies, Hiroyasu Hasumi, Helene Hewitt, Doroteaciro Iovino, Takao Kawasaki, Andrew E. Kiss, Nikolay Koldunov, Alice Marzocchi, Jennifer V. Mecking, Ben Moat, Jean‐Marc Molines, Paul G. Myers, Thierry Penduff, Malcolm Roberts, Anne‐Marie Treguier, Dmitry V. Sein, Dmitry Sidorenko, Justin Small, Paul Spence, LuAnne Thompson, Wilbert Weijer, Xiaobiao Xu, 2020, Journal of Geophysical Research - Oceans - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1175/jpo-d-13-092.1">On the Near-Inertial Resonance of the Atlantic Meridional Overturning Circulation</a> Florian Sévellec, Joël J.-M. Hirschi, Adam T. Blaker, 2013, Journal of Physical Oceanography - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1016/j.ocemod.2011.11.008">Large near-inertial oscillations of the Atlantic meridional overturning circulation</a> Adam T. Blaker, Joël J-M. Hirschi, Bablu Sinha, Beverly de Cuevas, Steven Alderson, Andrew Coward, Gurvan Madec, 2012, Ocean Modelling - Article</p></li>
-</ul>
-</section>
-<section id="equatorial-planetary-waves">
-<h3>Equatorial planetary waves<a class="headerlink" href="#equatorial-planetary-waves" title="Permalink to this headline">¶</a></h3>
-<p>Related to the NIWs are a special subset of equatorially trapped planetary waves.</p>
-<p>Some of my relevant papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://doi.org/10.1002/essoar.10508604.1">TAO data support the existence of large high frequency variations in cross-equatorial overturning circulation</a>  Lois Elizabeth Baker, Mike Bell, Adam Tobias Blaker, 2021, ESSOAr - Preprint</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1175/jpo-d-19-0296.1">Wind-Driven Oscillations in the Meridional Overturning Circulation near the equator. Part I: Numerical Models</a> Adam T. Blaker, Joël J.-M. Hirschi, Michael J. Bell, Amy Bokota, 2021, Journal of Physical Oceanography - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1175/jpo-d-19-0297.1">Wind-Driven Oscillations in Meridional Overturning Circulations near the Equator. Part II: Idealized Simulations</a>  Michael J. Bell, Adam T. Blaker, Joël J.-M. Hirschi, 2021, Journal of Physical Oceanography - Article</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="ocean-and-climate-modelling">
-<h2>Ocean and Climate Modelling<a class="headerlink" href="#ocean-and-climate-modelling" title="Permalink to this headline">¶</a></h2>
-<section id="id3">
-<h3><a class="reference external" href="https://forge.ipsl.jussieu.fr/nemo/wiki/Users">NEMO</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>Much of my work evolves around use and development of the NEMO ocean modelling framework.</p>
-<p>Some of my relevant papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://doi.org/10.5194/gmd-8-1547-2015">NEMO–ICB (v1.0): interactive icebergs in the NEMO ocean model globally configured at eddy-permitting resolution</a> R. Marsh, V. O. Ivchenko, N. Skliris, S. Alderson, G. R. Bigg, G. Madec, A. T. Blaker, Y. Aksenov, B. Sinha, A. C. Coward, J. Le Sommer, N. Merino, V. B. Zalesny, 2015, Geoscientific Model Development - Article</p></li>
-</ul>
-</section>
-<section id="id4">
-<h3><a class="reference external" href="http://www.jwcrp.org.uk/under/jmmp.asp">JMMP</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>is a collaborative programme between NERC and the Met Office, jointly developing configurations of the global ocean and sea-ice.</p>
-<p>Some of my relevant papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://doi.org/10.5194/gmd-11-3187-2018">UK Global Ocean GO6 and GO7: a traceable hierarchy of model resolutions</a> David Storkey, Adam T. Blaker, Pierre Mathiot, Alex Megann, Yevgeny Aksenov, Edward W. Blockley, Daley Calvert, Tim Graham, Helene T. Hewitt, Patrick Hyder, Till Kuhlbrodt, Jamie G. L. Rae, Bablu Sinha, 2018, Geoscientific Model Development - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1029/2019ms001933">Spin‐up of UK Earth System Model 1 (UKESM1) for CMIP6</a> A. Yool, J. Palmiéri, C. G. Jones, A. A. Sellar, L. Mora, T. Kuhlbrodt, E. E. Popova, J. P. Mulcahy, A. Wiltshire, S. T. Rumbold, M. Stringer, R. S. R. Hill, Y. Tang, J. Walton, A. Blaker, A. J. G. Nurser, A. C. Coward, J. Hirschi, S. Woodward, D. I. Kelley, R. Ellis, S. Rumbold‐Jones, 2020, Journal of Advances in Modeling Earth Systems - Article</p></li>
-</ul>
-</section>
-<section id="id5">
-<h3><a class="reference external" href="https://doi.org/10.5281/zenodo.4108373">FORTE 2.0</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p>is a coupled atmosphere-ocean general circulation model. I have developed and used FORTE for projects and studies since my PhD. It is now publicly accessible and open for anyone to use.</p>
-<p>Some of my relevant papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://doi.org/10.5194/gmd-14-275-2021">FORTE 2.0: a fast, parallel and flexible coupled climate model</a> Adam T. Blaker, Manoj Joshi, Bablu Sinha, David P. Stevens, Robin S. Smith, Joël J.-M. Hirschi, 2021, Geoscientific Model Development - Article</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="error-and-uncertainty-in-numerical-models">
-<h2>Error and uncertainty in numerical models<a class="headerlink" href="#error-and-uncertainty-in-numerical-models" title="Permalink to this headline">¶</a></h2>
-<p>I have a keen in understanding and reducing errors and sources of uncertainty in numerical models and the simulations and projections they produce. Much of this work has been in collaboration with <a class="reference external" href="https://github.com/BayesExeter">Danny Williamson</a></p>
-<p>Some of my relevant papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://doi.org/10.5194/gmd-10-1789-2017">Tuning without over-tuning: parametric uncertainty quantification for the NEMO ocean model</a> Daniel B. Williamson, Adam T. Blaker, Bablu Sinha, 2017, Geoscientific Model Development - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1007/s00382-014-2378-z">Identifying and removing structural biases in climate models with history matching</a> Daniel Williamson, Adam T. Blaker, Charlotte Hampton, James Salter, 2014, Climate Dynamics - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1007/s00382-013-1896-4">History matching for exploring and reducing climate model parameter space using observations and a large perturbed physics ensemble</a> Daniel Williamson, Michael Goldstein, Lesley Allison, Adam Blaker, Peter Challenor, Laura Jackson, Kuniko Yamazaki, 2013, Climate Dynamics - Article</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="the-climate-system">
-<h2>The climate system<a class="headerlink" href="#the-climate-system" title="Permalink to this headline">¶</a></h2>
-<p>I have a broad interest in all aspects of the climate system. My research ranges from fast ocean processes (waves) and teleconnections, to natural variability on seasonal to decadal timescales, and to longer term variability and trends such as those caused by global warming.</p>
-<p>Some of my relevant papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://doi.org/10.1029/2018jc014225">Model‐Derived Uncertainties in Deep Ocean Temperature Trends Between 1990 and 2010</a> F. K. Garry, E. L. McDonagh, A. T. Blaker, C. D. Roberts, D. G. Desbruyères, E. Frajka‐Williams, B. A. King, 2019, Journal of Geophysical Research - Oceans - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1088/1748-9326/aace42">Improved estimates of water cycle change from ocean salinity: the key role of ocean warming</a> Jan D Zika, Nikolaos Skliris, Adam T Blaker, Robert Marsh, A J George Nurser, Simon A Josey, 2018, Environmental Research Letters - Article</p></li>
-<li><p><a class="reference external" href="https://doi.org/10.1002/2014gl061456">Surface warming hiatus caused by increased heat uptake across multiple ocean basins</a> S. S. Drijfhout, A. T. Blaker, S. A. Josey, A. J. G. Nurser, B. Sinha, M. A. Balmaseda, 2014, Geophysical Research Letters - Article</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="publications">
-<h1>Publications<a class="headerlink" href="#publications" title="Permalink to this headline">¶</a></h1>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference external" href="https://scholar.google.com/citations?hl=en&amp;user=NC69CIwAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a></p></li>
-<li><p><a class="reference external" href="https://app.dimensions.ai/discover/publication?and_facet_researcher=ur.010144233545.47">Dimensions</a></p></li>
-<li><p><a class="reference external" href="https://orcid.org/0000-0001-5454-0131">ORCID</a></p></li>
-</ul>
-</div></blockquote>
-</section>
-<hr class="docutils" />
-<section id="interests">
-<h1>Interests<a class="headerlink" href="#interests" title="Permalink to this headline">¶</a></h1>
-<section id="aikido">
-<h2>Aikido<a class="headerlink" href="#aikido" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-</div>
-<p>I practise Aikido at the <a class="reference external" href="https://sites.google.com/view/unisouthamptonaikido/home">Southampton Shiseijan dojo</a>  (<a class="reference external" href="https://bafonline.org.uk/?i=1">BAF</a> affiliated) with the chief instructor Alex Megann (6 Dan). I teach classes on Friday evening approximately once per month.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This page is under active development.</p>
-</div>
-</section>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/background.png" alt="Ocean Currents Simulation Background">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>
+          Adam Blaker
+          <span>Oceanography &amp; Climate Science</span>
+        </h1>
+        <p class="tagline">
+          Research Scientist in the Ocean Modelling group at the National Oceanography Centre. Studying the mean state
+          and variability of global ocean circulation, building high-resolution numerical models, and quantifying
+          uncertainty in climate simulations.
+        </p>
+        <p class="hero-location">
+          <svg class="location-pin" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          Southampton, United Kingdom
+        </p>
+        <div class="hero-links">
+          <a href="https://scholar.google.com/citations?hl=en&user=NC69CIwAAAAJ&view_op=list_works&sortby=pubdate"
+            target="_blank" class="primary">Google Scholar</a>
+          <a href="#contact" class="secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/profile.jpg" alt="Adam Blaker">
+      </div>
+    </div>
+  </section>
 
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,40 C320,80 480,-20 800,30 C1120,80 1280,10 1440,40 L1440,60 L0,60 Z"></path>
+    </svg>
+  </div>
 
-            <div class="clearer"></div>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title">Research Scientist &amp; Modeller</h2>
+          <p>
+            I am a research scientist in the Ocean Modelling group at the National Oceanography Centre (NOC),
+            Southampton. My scientific journey focuses on improving our understanding of the mean state and variability
+            of the ocean and climate system. My research interests include large-scale ocean dynamics, notably the
+            Atlantic Meridional Overturning Circulation (AMOC), ocean heat content and transport. I participated in the
+            research cruise DY204 in February 2026, which featured on the <a
+              href="https://www.channel4.com/news/the-key-atlantic-current-that-could-change-europes-climate-forever"
+              target="_blank">Channel 4 news</a>.
+          </p>
+          <p>
+            I employ state-of-the-art numerical ocean general circulation models (OGCMs) and comprehensive observational
+            datasets to analyse global climate. A significant part of my work involves configuring and developing
+            models, with a strong interest in understanding the structural biases, parameters, errors, and uncertainties
+            associated with numerical simulations.
+          </p>
+          <div class="interests-tags">
+            <span>Physical Oceanography</span>
+            <span>Ocean &amp; Climate Modelling</span>
+            <span>Uncertainty Quantification</span>
+            <span>AMOC Dynamics</span>
+            <span>NEMO Model</span>
+            <span>Ocean-Atmosphere Coupling</span>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <h4>Ocean Modelling Group</h4>
+            <p class="institution"><a href="https://www.noc.ac.uk/our-work/digital-science-and-data/models"
+                target="_blank">National Oceanography Centre (NOC)</a></p>
+            <p>Developing configurations of global ocean and sea-ice, conducting climate hindcasts, and analyzing
+              meridional overturning transports.</p>
+          </div>
+          <div class="detail-card">
+            <h4>Collaborators &amp; Partners</h4>
+            <p>Working closely with:</p>
+            <ul>
+              <li><a href="https://www.metoffice.gov.uk/" target="_blank" class="institution">UK Met Office</a></li>
+              <li><a href="https://ncas.ac.uk/" target="_blank" class="institution">NCAS</a></li>
+            </ul>
+            <p>and academic institutions worldwide.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Research</a><ul>
-<li><a class="reference internal" href="#ocean-circulation">Ocean Circulation</a><ul>
-<li><a class="reference internal" href="#id1">RAPID-AMOC</a></li>
-<li><a class="reference internal" href="#id2">Near Inertial Waves</a></li>
-<li><a class="reference internal" href="#equatorial-planetary-waves">Equatorial planetary waves</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#ocean-and-climate-modelling">Ocean and Climate Modelling</a><ul>
-<li><a class="reference internal" href="#id3">NEMO</a></li>
-<li><a class="reference internal" href="#id4">JMMP</a></li>
-<li><a class="reference internal" href="#id5">FORTE 2.0</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#error-and-uncertainty-in-numerical-models">Error and uncertainty in numerical models</a></li>
-<li><a class="reference internal" href="#the-climate-system">The climate system</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#publications">Publications</a></li>
-<li><a class="reference internal" href="#interests">Interests</a><ul>
-<li><a class="reference internal" href="#aikido">Aikido</a></li>
-</ul>
-</li>
-</ul>
-
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Go" />
-    </form>
     </div>
-</div>
-<script>$('#searchbox').show(0);</script>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="section-inner">
+      <p class="section-label">Areas of Research</p>
+      <h2 class="section-title">Core Scientific Focus</h2>
+      <div class="research-grid">
+        <div class="research-card fade-in">
+          <div>
+            <h3>Ocean Circulation</h3>
+            <p>
+              Investigating large-scale ocean dynamics, Atlantic meridional transport, and high-frequency wave
+              structures in numerical model configurations and mooring records.
+            </p>
+          </div>
+          <div class="research-subtopics">
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>RAPID-AMOC:</strong> Analysis of North Atlantic overturning variability and heat transport
+                in support of the transatlantic monitoring array.</span>
+            </div>
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>Near Inertial Waves (NIWs):</strong> Researching superinertial ocean variability and
+                resonances in high-resolution models.</span>
+            </div>
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>Equatorial Waves:</strong> Studying wind-driven oscillations and trapped planetary waves
+                near the equator.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-card fade-in">
+          <div>
+            <h3>Ocean &amp; Climate Modelling</h3>
+            <p>
+              Configuring, running, and analyzing complex numerical ocean and coupled Earth system configurations to
+              simulate global ocean dynamics.
+            </p>
+          </div>
+          <div class="research-subtopics">
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>NEMO:</strong> Core user and developer of global configurations of the NEMO ocean
+                modelling framework.</span>
+            </div>
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>JMMP:</strong> Developing global Configurations of the ocean and sea-ice in collaboration
+                with Met Office and NERC.</span>
+            </div>
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>FORTE 2.0:</strong> Publicly available coupled climate model (IGCM4 atmosphere + MOMA ocean)
+                designed for fast, long climate integrations.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-card fade-in">
+          <div>
+            <h3>Error &amp; Uncertainty</h3>
+            <p>
+              Quantifying parameter space and investigating structural biases in numerical models to improve the
+              reliability of climate projections.
+            </p>
+          </div>
+          <div class="research-subtopics">
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>Parametric Tuning:</strong> History matching to tune global configurations without
+                over-tuning, using statistical emulators.</span>
+            </div>
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>Structural Bias:</strong> Detecting and mitigating model discrepancies by contrasting
+                perturbed physics ensembles against observations.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-card fade-in">
+          <div>
+            <h3>The Climate System</h3>
+            <p>
+              Studying multi-scale interactions in climate variability, ranging from short-term wave oscillations to
+              decadal warming trends.
+            </p>
+          </div>
+          <div class="research-subtopics">
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>Deep Ocean Heat:</strong> Assessing uncertainties in deep ocean temperature trends (2000m+)
+                derived from hydrographic sections.</span>
+            </div>
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>Warming Hiatus:</strong> Modeling ocean heat uptake redistribution during atmospheric
+                warming slowdown events.</span>
+            </div>
+            <div class="subtopic-item">
+              <i class="fas fa-chevron-right"></i>
+              <span><strong>Water Cycle Change:</strong> Linking ocean warming and salinity fields to trace global water
+                cycle variations.</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="nav-item nav-item-0"><a href="#">Adam Blaker 0 documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Research</a></li> 
-      </ul>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="section-inner">
+      <p class="section-label">Research Output</p>
+      <h2 class="section-title">Selected Publications</h2>
+      <div class="pub-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="circulation">Ocean Circulation</button>
+        <button class="filter-btn" data-filter="modelling">Ocean Modelling</button>
+        <button class="filter-btn" data-filter="uncertainty">Model Uncertainty</button>
+        <button class="filter-btn" data-filter="climate">Climate System</button>
+      </div>
+      <div class="pub-grid" id="pubGrid">
+        <!-- Rendered dynamically via JS -->
+      </div>
     </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Adam Blaker.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+  </section>
+
+  <!-- INTERESTS (AIKIDO) -->
+  <section id="interests">
+    <div class="section-inner">
+      <p class="section-label">Interests</p>
+      <h2 class="section-title">Beyond the Lab</h2>
+      <div class="interests-box fade-in">
+        <div class="interests-icon-wrap">
+          <i class="fas fa-yin-yang"></i>
+        </div>
+        <div class="interests-content">
+          <h3>Aikido Practise &amp; Instruction</h3>
+          <p>
+            Outside of research, I have a long-term dedication to the martial art of Aikido. I practise at the <a
+              href="https://southampton-aikikai.com/" target="_blank">Southampton Shiseijan
+              Dojo</a> (affiliated with the <a href="https://www.britishaikidofederation.com" target="_blank">British
+              Aikido Federation, BAF</a>), training with chief instructor Alex Megann
+            (6th Dan). I teach Friday evening classes approximately once a month.
+          </p>
+        </div>
+      </div>
     </div>
-  </body>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label">Technical Toolkit</p>
+      <h2 class="section-title">Skills &amp; Frameworks</h2>
+      <div class="skills-grid">
+        <div class="skill-group fade-in" data-accent="programming">
+          <div class="skill-header">
+            <div class="skill-icon-badge"><i class="fas fa-code"></i></div>
+            <h4>Programming</h4>
+          </div>
+          <div class="skill-pills">
+            <span>Python</span>
+            <span>Fortran</span>
+            <span>Shell Scripting</span>
+            <span>Bash / Linux</span>
+            <span>Git</span>
+          </div>
+        </div>
+        <div class="skill-group fade-in" data-accent="data">
+          <div class="skill-header">
+            <div class="skill-icon-badge"><i class="fas fa-chart-line"></i></div>
+            <h4>Data Analysis</h4>
+          </div>
+          <div class="skill-pills">
+            <span>xarray</span>
+            <span>NetCDF</span>
+            <span>CDO</span>
+            <span>Panoply</span>
+            <span>Jupyter</span>
+            <span>Matplotlib</span>
+          </div>
+        </div>
+        <div class="skill-group fade-in" data-accent="models">
+          <div class="skill-header">
+            <div class="skill-icon-badge"><i class="fas fa-server"></i></div>
+            <h4>Numerical Models</h4>
+          </div>
+          <div class="skill-pills">
+            <span>NEMO</span>
+            <span>FORTE 2.0</span>
+            <span>UKESM1</span>
+            <span>MOMA</span>
+            <span>IGCM4</span>
+          </div>
+        </div>
+        <div class="skill-group fade-in" data-accent="scicomp">
+          <div class="skill-header">
+            <div class="skill-icon-badge"><i class="fas fa-network-wired"></i></div>
+            <h4>HPC &amp; Computing</h4>
+          </div>
+          <div class="skill-pills">
+            <span>High Performance Computing</span>
+            <span>SLURM Job Scheduler</span>
+            <span>Linux</span>
+            <span>Parameter Tuning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <p class="contact-intro">I'm always open to scientific discussions regarding ocean circulation, model
+            development, coupled climate dynamics, or statistical emulators. Drop me a line!</p>
+          <form class="contact-form" action="https://formspree.io/f/xknkkwvy" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail ID</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" maxlength="5000" placeholder="Your message..."
+                required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-sidebar">
+          <p class="contact-sidebar-title">Find me on</p>
+          <div class="contact-link-list">
+            <a href="https://scholar.google.com/citations?hl=en&user=NC69CIwAAAAJ&view_op=list_works&sortby=pubdate"
+              target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+            <a href="https://orcid.org/0000-0001-5454-0131" target="_blank"><i class="ai ai-orcid"></i> ORCID ID</a>
+            <a href="https://app.dimensions.ai/discover/publication?and_facet_researcher=ur.010144233545.47"
+              target="_blank"><i class="ai ai-dimensions"></i> Dimensions Profile</a>
+            <a href="https://github.com/atb299" target="_blank"><i class="fab fa-github"></i> GitHub Account</a>
+            <a href="mailto:adam.blaker@noc.ac.uk"><i class="fas fa-envelope"></i> Email Address</a>
+          </div>
+          <div class="contact-map">
+            <p class="contact-map-title">Based at</p>
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-1.41,50.885,-1.38,50.900&layer=mapnik&marker=50.8926,-1.3944"
+              loading="lazy" title="National Oceanography Centre, Southampton"></iframe>
+            <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:0.5rem">National Oceanography Centre,
+              Southampton, European Way, SO14 3ZH, UK</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATION MODAL -->
+  <div class="pub-modal-overlay" id="pubModalOverlay">
+    <div class="pub-modal">
+      <button class="pub-modal-close" id="pubModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="pub-modal-tag" id="pmTag"></div>
+      <h3 class="pub-modal-title" id="pmTitle"></h3>
+      <p class="pub-modal-authors" id="pmAuthors"></p>
+      <div class="pub-modal-journal-row">
+        <p class="pub-modal-journal" id="pmJournal"></p>
+        <span id="pmStatusWrap"></span>
+      </div>
+      <hr class="pub-modal-divider">
+      <p class="pub-modal-abstract-heading">Abstract</p>
+      <p class="pub-modal-abstract" id="pmAbstract"></p>
+      <div id="pmLinkWrap"></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <footer>
+    <p>&copy; 2026 Adam Blaker. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    (function () {
+      var toggle = document.getElementById('theme-toggle');
+      var root = document.documentElement;
+      var saved = localStorage.getItem('theme');
+      if (saved) {
+        root.setAttribute('data-theme', saved);
+        toggle.checked = (saved === 'dark');
+      }
+      toggle.addEventListener('change', function () {
+        var next = toggle.checked ? 'dark' : 'light';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+
+    // Scroll progress bar & back-to-top
+    (function () {
+      var bar = document.getElementById('scrollProgress');
+      var btn = document.getElementById('backToTop');
+      window.addEventListener('scroll', function () {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        bar.style.width = pct + '%';
+        btn.classList.toggle('visible', scrollTop > 400);
+      });
+      btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Publications dataset
+    const publications = [
+      {
+        doi: "10.1029/2025GL116580",
+        category: "climate",
+        tag: "Article · 2025",
+        title: "Extreme ocean conditions of the 2024 hurricane season formed by rare combination of drivers",
+        authors: "EA Harris, R Marsh, JP Grist, <strong>AT Blaker</strong>",
+        journal: "Geophysical Research Letters 52 (21), e2025GL116580, 2025",
+        abstract: "Record heat was observed in the tropical North Atlantic in 2023 and 2024. However, in 2024, in contrast to the previous year, most of the record-breaking surface and sub-surface temperatures were focused in the western two thirds of the basin. This allowed for intensification of hurricanes into major storms prior to landfall. Water mass transformation analysis reveals much of the anomalous warm water volume arose from atmospheric heat flux into the ocean. Lagrangian analysis then shows how, atypically, warm water was advected to the west by a rarely observed zonal pathway. Thus, combined heat exchanges via air-sea heat transfer and ocean currents coordinated to result in record breaking temperatures in the western tropical Atlantic in 2024, allowing development of landfalling major hurricanes when atmospheric and oceanic conditions were aligned and conducive to tropical cyclone development.",
+        link: "https://doi.org/10.1029/2025GL116580"
+      },
+      {
+        doi: "10.1029/2025JC023093",
+        category: "circulation",
+        tag: "Article · 2025",
+        title: "Evaluation of a Reduced RAPID Array for Measuring the AMOC",
+        authors: "T Petit, D Smeed, <strong>A Blaker</strong>, S Elipot, W Johns, JB Kajtar, D Rayner, ...",
+        journal: "Journal of Geophysical Research: Oceans 130 (11), e2025JC023093, 2025",
+        abstract: "Observation-based estimates of the Atlantic Meridional Overturning Circulation (AMOC) and meridional heat transport (MHT) are necessary to better understand their evolution in the coming years. The RAPID-MOCHA-WBTS array at 26°N is the only trans-Atlantic observing system to provide 20+ years of continuous measurements of the AMOC and MHT. While the design of the array has continuously evolved as our understanding of the AMOC has advanced, and as new technologies have become available, a new goal is to design a lower-cost and more sustainable observing system to continue AMOC estimations with high accuracy. Using the RAPID array data and ocean reanalyzes, we evaluate the error in the AMOC estimate due to the choice of data included in its calculation. We find that the trend and variability of the volume transport in the upper 3,000-m of the water column are not captured with sufficient accuracy by synoptic hydrographic data or ocean reanalyzes. However, moorings in the deep ocean interior along the eastern boundary and the Mid-Atlantic ridge can be replaced by hydrographic data from repeat trans-Atlantic hydrographic sections to reliably estimate the AMOC trend and variability. Experiments simulating the observing system in a high-resolution ocean model further show that the additional error in the long-term AMOC estimate induced by the substitution of mooring measurements below 3,000-m depth at these locations is small (0.30 Sv) as compared to the AMOC uncertainty.",
+        link: "https://doi.org/10.1029/2025JC023093"
+      },
+      {
+        doi: "10.5194/gmd-18-377-2025",
+        category: "modelling",
+        tag: "Article · 2025",
+        title: "GOSI9: UK Global Ocean and Sea Ice configurations",
+        authors: "C Guiavarc'h, D Storkey, <strong>AT Blaker</strong>, E Blockley, A Megann, H Hewitt, ...",
+        journal: "Geoscientific Model Development 18 (2), 377-403, 2025",
+        abstract: "The UK Global Ocean and Sea Ice configuration version 9 (GOSI9) is a new traceable hierarchy of three model configurations at 1°, 1/4° and 1/12° resolutions based on version 4.0.4 of the NEMO code. GOSI9 has been developed as part of the UK's Joint Marine Modelling Programme (JMMP), a partnership between the Met Office, the National Oceanography Centre, the British Antarctic Survey, and the Centre for Polar Observation and Modelling. Following a seamless approach, it will be used for a variety of applications across a wide range of spatial and temporal resolutions: short-range coupled numerical weather prediction (NWP) forecasts, ocean forecasts, seasonal and decadal forecasts, and climate and Earth system modelling. The GOSI9 configurations are described in detail with a special focus on the updates since the previous version (GO6-GSI8). Results from 30-year ocean–ice integrations forced by CORE2 fluxes are presented for the three resolutions, and the impacts of the updates are assessed using the 1/4° integrations. The upgrade to NEMO 4.0.4 includes a new sea ice model SI3 (Sea Ice modelling Integrated Initiative) and faster integration achieved through the use of partially implicit schemes that allow a significant increase in the length of the time step. The quality of the simulations is generally improved compared to GO6-GSI8. The temperature and salinity drifts are largely reduced thanks to the upgrade to NEMO 4.0.4 and the adoption of fourth-order horizontal and vertical advections helping to reduce the numerical mixing. To improve the representation of the Southern Ocean, a scale-aware form of the Gent–McWilliams parameterization and the application of a partial-slip lateral boundary condition on momentum in the Southern Ocean have been added, resulting in a stronger and more realistic Antarctic Circumpolar Current (ACC) transport and a reduction in the temperature and salinity biases along the shelf of Antarctica. In the Arctic, the representation of sea ice is improved, leading to a reduction in surface temperature and salinity biases. In particular, the excessive and unrealistic Arctic summer sea ice melt in GO6-GSI8 is significantly improved in GOSI9 and can be attributed to the change in the sea ice model and to the higher albedos that increased sea ice thickness.",
+        link: "https://doi.org/10.5194/gmd-18-377-2025"
+      },
+      {
+        doi: "10.1038/s41586-024-08368-y",
+        category: "climate",
+        tag: "Article · 2024",
+        title: "Record-low Antarctic sea ice in 2023 increased ocean heat loss and storms",
+        authors: "SA Josey, AJS Meijers, <strong>AT Blaker</strong>, JP Grist, J Mecking, HC Ayres",
+        journal: "Nature 636 (8043), 635-639, 2024",
+        abstract: "Recent Antarctic sea-ice decline is a substantial source of concern, notably the record low in 2023. Progress has been made towards establishing the causes of ice loss but uncertainty remains about its consequences for ocean–atmosphere interaction. Resolution of this uncertainty is important as ice decline can substantially alter surface heat loss and thus the ocean and atmosphere. Here we show that the strongest winter 2023 ice-retraction regions provide an important new source of turbulent ocean heat loss to the atmosphere in wintertime. Ice concentration in these regions (located primarily in the Weddell, Bellingshausen and Ross seas) is reduced by up to 80% and is accompanied by an unprecedented doubling of mid-winter ocean heat loss. Also, there is a phase shift in the time of peak heat loss from late April to mid-June, with weaker than normal heat loss in austral autumn. The winter surface-heat-loss intensification is accompanied by substantial changes on both sides of the ocean–atmosphere interface. These include increases in atmospheric-storm frequency and surface-heat-loss-driven dense water formation, although the implications of the densification for broader processes such as Antarctic bottom water formation remain unclear. Our results reveal that the 2023 Antarctic sea-ice loss has substantially modified air–sea interaction in the Southern Ocean and motivate in-depth analysis of the wider climate-system impacts.",
+        link: "https://doi.org/10.1038/s41586-024-08368-y"
+      },
+      {
+        doi: "10.5194/wcd-5-357-2024",
+        category: "climate",
+        tag: "Article · 2024",
+        title: "Sustained intensification of the Aleutian Low induces weak tropical Pacific sea surface warming",
+        authors: "WJ Dow, CM McKenna, MM Joshi, <strong>AT Blaker</strong>, R Rigby, AC Maycock",
+        journal: "Weather and Climate Dynamics 5 (1), 357-367, 2024",
+        abstract: "It has been proposed that externally forced trends in the Aleutian Low can induce a basin-wide Pacific sea surface temperature (SST) response that projects onto the pattern of the Pacific Decadal Oscillation (PDO). To investigate this hypothesis, we apply local atmospheric nudging in an intermediate-complexity climate model to isolate the effects of an intensified winter Aleutian Low sustained over several decades. An intensification of the Aleutian Low produces a basin-wide SST response with a similar pattern to the model's internally generated PDO. The amplitude of the SST response in the North Pacific is comparable to the PDO, but in the tropics and southern subtropics the anomalies induced by the imposed Aleutian Low anomaly are a factor of 3 weaker than for the internally generated PDO. The tropical Pacific warming peaks in boreal spring, though anomalies persist year-round. A heat budget analysis shows the northern subtropical Pacific SST response is predominantly driven by anomalous surface turbulent heat fluxes in boreal winter, while in the equatorial Pacific the response is mainly due to meridional heat advection in boreal spring. The propagation of anomalies from the extratropics to the tropics can be explained by the seasonal footprinting mechanism, involving the wind–evaporation–SST feedback. The results show that low-frequency variability and trends in the Aleutian Low could contribute to basin-wide anomalous Pacific SST, but the magnitude of the effect in the tropical Pacific, even for the extreme Aleutian Low forcing applied here, is small. Therefore, external forcing of the Aleutian Low is unlikely to account for observed decadal SST trends in the tropical Pacific in the late 20th and early 21st centuries.",
+        link: "https://doi.org/10.5194/wcd-5-357-2024"
+      },
+      {
+        doi: "10.1098/rsta.2022.0070",
+        category: "climate",
+        tag: "Article · 2023",
+        title: "Finale: impact of the ORCHESTRA/ENCORE programmes on Southern Ocean heat and carbon understanding",
+        authors: "AJS Meijers, MP Meredith, EF Shuckburgh, EC Kent, DR Munday, ...",
+        journal: "Philosophical Transactions of the Royal Society A: Mathematical, Physical …, 2023",
+        abstract: "The 5-year Ocean Regulation of Climate by Heat and Carbon Sequestration and Transports (ORCHESTRA) programme and its 1-year extension ENCORE (ENCORE is the National Capability ORCHESTRA Extension) was an approximately 11-million-pound programme involving seven UK research centres that finished in March 2022. The project sought to radically improve our ability to measure, understand and predict the exchange, storage and export of heat and carbon by the Southern Ocean. It achieved this through a series of milestone observational campaigns in combination with model development and analysis. Twelve cruises in the Weddell Sea and South Atlantic were undertaken, along with mooring, glider and profiler deployments and aircraft missions, all contributing to measurements of internal ocean and air–sea heat and carbon fluxes. Numerous forward and adjoint numerical experiments were developed and supported by the analysis of coupled climate models. The programme has resulted in over 100 peer-reviewed publications to date as well as significant impacts on climate assessments and policy and science coordination groups. Here, we summarize the research highlights of the programme and assess the progress achieved by ORCHESTRA/ENCORE and the questions it raises for the future.",
+        link: "https://doi.org/10.1098/rsta.2022.0070"
+      },
+      {
+        doi: "10.1175/JPO-D-21-0100.1",
+        category: "circulation, climate, modelling",
+        tag: "Article · 2022",
+        title: "Chaotic variability of the atlantic meridional overturning circulation at subannual time scales",
+        authors: "A Germe, JJM Hirschi, <strong>AT Blaker</strong>, B Sinha",
+        journal: "Journal of Physical Oceanography 52 (5), 929-949, 2022",
+        abstract: "This study describes the intra- to interannual variability of the Atlantic meridional overturning circulation (AMOC) and the relative dynamical contributions to the total variability in an eddy-resolving 1/12° resolution ocean model. Based on a 53-yr-long hindcast and two 4-yr-long ensembles, we assess the total AMOC variability as well as the variability arising from small differences in the ocean initial state that rapidly imprints on the mesoscale eddy fields and subsequently on large-scale features. This initial-condition-dependent variability will henceforth be referred to as “chaotic” variability. We find that intra-annual AMOC fluctuations are mainly driven by the atmospheric forcing, with the chaotic variability fraction never exceeding 26% of the total variance in the whole meridional Atlantic domain. To understand the nature of the chaotic variability we decompose the AMOC (into its Ekman, geostrophic, barotropic, and residual components). The barotropic and geostrophic AMOC contributions exhibit strong, partly compensating fluctuations, which are linked to chaotic spatial variations of currents over topography. In the North Atlantic, the largest chaotic divergence of ensemble members is found around 24°, 38°, and 64°N. At 26.5°N, where the AMOC is monitored by the RAPID–MOCHA array, the chaotic fraction of the AMOC variability is 10%. This fraction is slightly overestimated with the reconstruction methodology as used in the observations (∼15%). This higher fraction of chaotic variability is due to the barotropic contribution not being completely captured by the monitoring system. We look at the strong AMOC decline observed in 2009/10 and find that the ensemble spread (our measure for chaotic variability) was not particularly large during this event.",
+        link: "https://doi.org/10.1175/JPO-D-21-0100.1"
+      },
+      {
+        doi: "10.1029/2021GL096879",
+        category: "circulation",
+        tag: "Article · 2021",
+        title: "TAO data support the existence of large high frequency variations in cross-equatorial overturning circulation",
+        authors: "Lois Elizabeth Baker, Mike Bell, <strong>Adam Tobias Blaker</strong>",
+        journal: "Geophysical Research Letters",
+        abstract: "Large amplitude oscillations in the meridional overturning circulation (MOC) have been found near the equator in all major ocean basins in the NEMO ocean general circulation model. With periods of 3-15 days and amplitudes of ~100 Sv in the Pacific, these oscillations have been shown to correspond to zonally integrated equatorially trapped waves forced by winds within 10° N/S of the equator. Observations of dynamic height from the Tropical Atmosphere Ocean (TAO) mooring array in the equatorial Pacific also exhibit spectral peaks consistent with the dispersion relation for equatorially trapped waves. Here, we revisit the TAO observations to confirm that the amplitude of the oscillations is consistent with the simulations, supporting the modelled large amplitude MOC oscillations. We also show that the zonal structure of the frequency spectrum in both observations and simulations is predicted by changes in the baroclinic wave speed with variation in stratification across the ocean basin.",
+        link: "https://doi.org/10.1029/2021GL096879"
+      },
+      {
+        doi: "10.1029/2021jc017865",
+        category: "circulation",
+        tag: "Article · 2021",
+        title: "Mechanisms for Late 20th and Early 21st Century Decadal AMOC Variability",
+        authors: "Alex Megann, <strong>Adam Blaker</strong>, Simon Josey, Adrian New, Bablu Sinha",
+        journal: "Journal of Geophysical Research: Oceans, 126",
+        abstract: "Recent studies using data from the OSNAP observational campaign and from numerical ocean models suggest that the Iceland Basin and the Irminger Sea may be more significant for formation of upper North Atlantic Deep Water than the Labrador Sea. Here, we present a set of hindcast integrations of a global 1/4° NEMO simulation from 1958 until nearly the present day, forced with three standard forcing data sets. We use the surface‐forced stream function, estimated from surface buoyancy fluxes, along with the overturning stream function, similarly defined in potential density space, to investigate the causal link between surface forcing and decadal variability in the strength of the Atlantic meridional overturning circulation (AMOC). We use the stream functions to demonstrate that watermasses in the simulations are transformed to higher densities as they propagate around the subpolar gyre from their formation locations in the north‐east Atlantic and the Irminger Sea, consistent with the picture emerging from observations. The surface heat loss from the Irminger Sea is confirmed to be the dominant mechanism for decadal AMOC variability, with the heat loss anomaly from the Labrador Sea having about half the magnitude. A scalar metric based on the surface‐forced stream function, accumulated in time, is found to be a good predictor of changes in the overturning strength. The AMOC variability is shown to be related to that of the North Atlantic Oscillation (NAO), primarily through the surface heat flux, itself dominated by the air‐sea temperature difference, but also with some local feedback from the SST to the surface fluxes.",
+        link: "https://doi.org/10.1029/2021jc017865"
+      },
+      {
+        doi: "10.1088/1748-9326/ac1293",
+        category: "climate, circulation",
+        tag: "Article · 2021",
+        title: "Labrador Slope Water connects the subarctic with the Gulf Stream",
+        authors: "AL New, DA Smeed, A Czaja, <strong>AT Blaker</strong>, JV Mecking, JP Mathews, ...",
+        journal: "Environmental Research Letters 16 (8), 084019, 2021",
+        abstract: "Labrador Slope Water (LSLW) is a relatively fresh and cool water mass that originates from the Labrador Current in the subarctic and is known to occur in the Eastern Slope Sea on the US-Canadian shelf-slope north of the Gulf Stream. It has potential densities of 27.4–27.65 kg m<sup>−3</sup>. Using ocean observations, we show here that the LSLW penetrates as a boundary current deeply into the Western Slope Sea (west of 66°W) as a salinity minimum between 400 and 600 m, bringing it into close proximity with the Gulf Stream. The LSLW at Line W (near 69°W) also spreads across, and brings fresher and thicker waters to, the Slope Sea north of the Gulf Stream. A high-resolution ocean model simulation shows that the spreading of the LSLW occurs throughout the entire Slope Sea through the extrusion of fine-scale filaments from the boundary current following interaction with Gulf Stream meanders and eddies. At Line W, the LSLW is also found to be fresher and thicker between 2003 and 2008, when the Atlantic Meridional Overturning Circulation (AMOC) at 26°N is higher (by 3 Sv), and the Shelf Slope Front is further south (by 0.7°), compared to AMOC low conditions in 2009–2014. The thicker LSLW causes lighter isopycnals to rise over the shelf slope, and through increasing the lateral density gradient contributes an additional 1.3 Sv to the Gulf Stream transport. These changes to the LSLW and the Shelf Slope Front are likely to result from an enhanced flow of the Labrador Current into the Slope Sea, caused by changes in the wind stress in the subpolar gyre. The transport of the LSLW (as opposed to the deeper Labrador Sea Water) thereby offers a potential new mechanism for decadal variability in the Atlantic climate system, through connecting changes in the subarctic with subsequent variability in the Gulf Stream and AMOC.",
+        link: "https://doi.org/10.1088/1748-9326/ac1293"
+      },
+      {
+        doi: "10.5194/gmd-14-3437-2021",
+        category: "climate, modelling",
+        tag: "Article · 2021",
+        title: "Evaluating the physical and biogeochemical state of the global ocean component of UKESM1 in CMIP6 historical simulations",
+        authors: "A Yool, J Palmiéri, CG Jones, L De Mora, T Kuhlbrodt, EE Popova, ...",
+        journal: "Geoscientific Model Development 14 (6), 3437-3472, 2021",
+        abstract: "The ocean plays a key role in modulating the climate of the Earth system (ES). At the present time it is also a major sink both for the carbon dioxide (CO2) released by human activities and for the excess heat driven by the resulting atmospheric greenhouse effect. Understanding the ocean's role in these processes is critical for model projections of future change and its potential impacts on human societies. A necessary first step in assessing the credibility of such future projections is an evaluation of their performance against the present state of the ocean. Here we use a range of observational fields to validate the physical and biogeochemical performance of the ocean component of UKESM1, a new Earth system model (ESM) for CMIP6 built upon the HadGEM3-GC3.1 physical climate model. Analysis focuses on the realism of the ocean's physical state and circulation, its key elemental cycles, and its marine productivity. UKESM1 generally performs well across a broad spectrum of properties, but it exhibits a number of notable biases. Physically, these include a global warm bias inherited from model spin-up, excess northern sea ice but insufficient southern sea ice and sluggish interior circulation. Biogeochemical biases found include shallow remineralization of sinking organic matter, excessive iron stress in regions such as the equatorial Pacific, and generally lower surface alkalinity that results in decreased surface and interior dissolved inorganic carbon (DIC) concentrations. The mechanisms driving these biases are explored to identify consequences for the behaviour of UKESM1 under future climate change scenarios and avenues for model improvement. Finally, across key biogeochemical properties, UKESM1 improves in performance relative to its CMIP5 precursor and performs well alongside its fellow members of the CMIP6 ensemble.",
+        link: "hhttps://doi.org/10.5194/gmd-14-3437-2021"
+      },
+      {
+        doi: "10.5194/esd-12-419-2021",
+        category: "modelling, climate",
+        tag: "Article · 2021",
+        title: "Labrador Sea subsurface density as a precursor of multidecadal variability in the North Atlantic: a multi-model study",
+        authors: "P Ortega, JI Robson, M Menary, RT Sutton, <strong>A Blaker</strong>, A Germe, ...",
+        journal: "Earth System Dynamics 12 (2), 419-438, 2021",
+        abstract: "The subpolar North Atlantic (SPNA) is a region with prominent decadal variability that has experienced remarkable warming and cooling trends in the last few decades. These observed trends have been preceded by slow-paced increases and decreases in the Labrador Sea density (LSD), which are thought to be a precursor of large-scale ocean circulation changes. This article analyses the interrelationships between the LSD and the wider North Atlantic across an ensemble of coupled climate model simulations. In particular, it analyses the link between subsurface density and the deep boundary density, the Atlantic Meridional Overturning Circulation (AMOC), the subpolar gyre (SPG) circulation, and the upper-ocean temperature in the eastern SPNA. All simulations exhibit considerable multidecadal variability in the LSD and the ocean circulation indices, which are found to be interrelated. LSD is strongly linked to the strength of the subpolar AMOC and gyre circulation, and it is also linked to the subtropical AMOC, although the strength of this relationship is model-dependent and affected by the inclusion of the Ekman component. The connectivity of LSD with the subtropics is found to be sensitive to different model features, including the mean density stratification in the Labrador Sea, the strength and depth of the AMOC, and the depth at which the LSD propagates southward along the western boundary. Several of these quantities can also be computed from observations, and comparison with these observation-based quantities suggests that models representing a weaker link to the subtropical AMOC might be more realistic.",
+        link: "https://doi.org/10.5194/esd-12-419-2021"
+      },
+      {
+        doi: "10.1175/jpo-d-19-0297.1",
+        category: "circulation, modelling",
+        tag: "Article · 2021",
+        title: "Wind-Driven Oscillations in Meridional Overturning Circulations near the Equator. Part II: Idealized Simulations",
+        authors: "Michael J. Bell, <strong>Adam T. Blaker</strong>, Joel J.-M. Hirschi",
+        journal: "Journal of Physical Oceanography, 51",
+        abstract: "Large-amplitude [~100 Sv (1 Sv ≡ 10<sup>6</sup> m<sup>3</sup> s<sup>−1</sup>)], high-frequency oscillations in the Pacific Ocean's meridional overturning circulation within 10° of the equator have been found in integrations of the NEMO ocean general circulation model. Part I of this paper showed that these oscillations are dominated by two bands of frequencies with periods close to 4 and 10 days and that they are driven by the winds within about 10° of the equator. This part shows that the oscillations can be well simulated by small-amplitude, wind-driven motions on a horizontally uniform, stably stratified state of rest. Its main novelty is that, by focusing on the zonally integrated linearized equations, it presents solutions for the motions in a basin with sloping side boundaries. The solutions are found using vertical normal modes and equatorial meridional modes representing Yanai and inertia-gravity waves. Simulations of 16-day-long segments of the time series for the Pacific of each of the first three meridional and vertical modes (nine modes in all) capture between 85% and 95% of the variance of matching time series segments diagnosed from the NEMO integrations. The best agreement is obtained by driving the solutions with the full wind forcing and the full pressure forces on the bathymetry. Similar results are obtained for the corresponding modes in the Atlantic and Indian Oceans. Slower variations in the same meridional and vertical modes of the MOC are also shown to be well simulated by a quasi-stationary solution driven by zonal wind and pressure forces.",
+        link: "https://doi.org/10.1175/jpo-d-19-0297.1"
+      },
+      {
+        doi: "10.1175/jpo-d-19-0296.1",
+        category: "circulation, modelling",
+        tag: "Article · 2021",
+        title: "Wind-Driven Oscillations in the Meridional Overturning Circulation near the equator. Part I: Numerical Models",
+        authors: "<strong>Adam T. Blaker</strong>, Joel J.-M. Hirschi, Michael J. Bell, Amy Bokota",
+        journal: "Journal of Physical Oceanography, 51",
+        abstract: "The great ocean conveyor presents a time-mean perspective on the interconnected network of major ocean currents. Zonally integrating the meridional velocities, either globally or across basin-scale domains, reduces the conveyor to a 2D projection widely known as the meridional overturning circulation (MOC). Recent model studies have shown the MOC to exhibit variability on near-inertial time scales, and also indicate a region of enhanced variability on the equator. We present an analysis of three integrations of a global configuration of a numerical ocean model, which show very large amplitude oscillations in the MOCs in the Atlantic, Indian, and Pacific Oceans confined to the equatorial region. The amplitude of these oscillations is proportional to the width of the ocean basin, typically about 100 (200) Sv (1 Sv ≡ 10<sup>6</sup> m<sup>3</sup> s<sup>−1</sup>) in the Atlantic (Pacific). We show that these oscillations are driven by surface winds within 10°N/S of the equator, and their periods (typically 4 days) correspond to a small number of low-mode equatorially trapped planetary waves. Furthermore, the oscillations can be well reproduced by idealized wind-driven simulations linearized about a state of rest.",
+        link: "https://doi.org/10.1175/jpo-d-19-0296.1"
+      },
+      {
+        doi: "10.5194/gmd-14-275-2021",
+        category: "modelling, climate",
+        tag: "Article · 2021",
+        title: "FORTE 2.0: a fast, parallel and flexible coupled climate model",
+        authors: "<strong>Adam T. Blaker</strong>, Manoj Joshi, Bablu Sinha, David P. Stevens, Robin S. Smith, Jo\u00ebl J.-M. Hirschi",
+        journal: "Geoscientific Model Development, 14",
+        abstract: "FORTE 2.0 is an intermediate-resolution coupled atmosphere-ocean general circulation model (AOGCM) consisting of the Intermediate General Circulation Model 4 (IGCM4), a T42 spectral atmosphere with 35σ layers, coupled to Modular Ocean Model - Array (MOMA), a 2° x 2° ocean with 15 z-layer depth levels. Sea ice is represented by a simple flux barrier. Both the atmosphere and ocean components are coded in Fortran. It is capable of producing a stable climate for long integrations without the need for flux adjustments. One flexibility afforded by the IGCM4 atmosphere is the ability to configure the atmosphere with either 35σ layers (troposphere and stratosphere) or 20σ layers (troposphere only). This enables experimental designs for exploring the roles of the troposphere and stratosphere, and the faster integration of the 20σ layer configuration enables longer duration studies on modest hardware. A description of FORTE 2.0 is given, followed by the analysis of two 2000-year control integrations, one using the 35σ configuration of IGCM4 and one using the 20σ configuration.",
+        link: "https://doi.org/10.5194/gmd-14-275-2021"
+      },
+      {
+        doi: "10.1029/2019ms001933",
+        category: "modelling, climate",
+        tag: "Article · 2020",
+        title: "Spin‐up of UK Earth System Model 1 (UKESM1) for CMIP6",
+        authors: "Andrew Yool, J. Palmi\u00e9ri, C. G. Jones, A. A. Sellar, Lee de Mora, Till Kuhlbrodt, E. E. Popova, J. P. Mulcahy, A. Wiltshire, S. T. Rumbold, M. Stringer, R. S. R. Hill, Y. Tang, J. Walton, <strong>Adam Blaker</strong>, A. J. G. Nurser, Andrew C. Coward, Jo\u00ebl Hirschi, S. Woodward, D. I. Kelley, R. Ellis, S. Rumbold‐Jones",
+        journal: "Journal of Advances in Modeling Earth Systems, 12",
+        abstract: "For simulations intended to study the influence of anthropogenic forcing on climate, temporal stability of the Earth's natural heat, freshwater, and biogeochemical budgets is critical. Achieving such coupled model equilibration is scientifically and computationally challenging. We describe the protocol used to spin‐up the UK Earth system model (UKESM1) with respect to preindustrial forcing for use in the sixth Coupled Model Intercomparison Project (CMIP6). Due to the high computational cost of UKESM1's atmospheric model, especially when running with interactive full chemistry and aerosols, spin‐up primarily used parallel configurations using only ocean/land components. For the ocean, the resulting spin‐up permitted the carbon and heat contents of the ocean's full volume to approach equilibrium over 5,000 years. On land, a spin‐up of 1,000 years brought UKESM1's dynamic vegetation and soil carbon reservoirs toward near‐equilibrium. The end‐states of these parallel ocean‐ and land‐only phases then initialized a multicentennial period of spin‐up with the full Earth system model, prior to this simulation continuing as the UKESM1 CMIP6 preindustrial control (piControl). The realism of the fully coupled spin‐up was assessed for a range of ocean and land properties, as was the degree of equilibration for key variables. Lessons drawn include the importance of consistent interface physics across ocean‐ and land‐only models and the coupled (parent) model, the extreme simulation duration required to approach equilibration targets, and the occurrence of significant regional land carbon drifts despite global‐scale equilibration. Overall, the UKESM1 spin‐up underscores the expense involved and argues in favor of future development of more efficient spin‐up techniques.",
+        link: "https://doi.org/10.1029/2019ms001933"
+      },
+      {
+        doi: "10.1029/2019jc015522",
+        category: "circulation, modelling",
+        tag: "Article · 2020",
+        title: "The Atlantic Meridional Overturning Circulation in High‐Resolution Models",
+        authors: "Jo\u00ebl J.‐M. Hirschi, Bernard Barnier, Claus B\u00f6ning, Arne Biastoch, <strong>Adam T. Blaker</strong>, Andrew Coward, Sergey Danilov, Sybren Drijfhout, Klaus Getzlaff, Stephen M. Griffies, Hiroyasu Hasumi, Helene Hewitt, Doroteaciro Iovino, Takao Kawasaki, Andrew E. Kiss, Nikolay Koldunov, Alice Marzocchi, Jennifer V. Mecking, Ben Moat, Jean‐Marc Molines, Paul G. Myers, Thierry Penduff, Malcolm Roberts, Anne‐Marie Treguier, Dmitry V. Sein, Dmitry Sidorenko, Justin Small, Paul Spence, LuAnne Thompson, Wilbert Weijer, Xiaobiao Xu",
+        journal: "Journal of Geophysical Research: Oceans, 125",
+        abstract: "The Atlantic meridional overturning circulation (AMOC) represents the zonally integrated stream function of meridional volume transport in the Atlantic Basin. The AMOC plays an important role in transporting heat meridionally in the climate system. Observations suggest a heat transport by the AMOC of 1.3 PW at 26°N—a latitude which is close to where the Atlantic northward heat transport is thought to reach its maximum. This shapes the climate of the North Atlantic region as we know it today. In recent years there has been significant progress both in our ability to observe the AMOC in nature and to simulate it in numerical models. Most previous modeling investigations of the AMOC and its impact on climate have relied on models with horizontal resolution that does not resolve ocean mesoscale eddies and the dynamics of the Gulf Stream/North Atlantic Current system. As a result of recent increases in computing power, models are now being run that are able to represent mesoscale ocean dynamics and the circulation features that rely on them. The aim of this review is to describe new insights into the AMOC provided by high‐resolution models. Furthermore, we will describe how high‐resolution model simulations can help resolve outstanding challenges in our understanding of the AMOC.",
+        link: "https://doi.org/10.1029/2019jc015522"
+      },
+      {
+        doi: "10.1088/1748-9326/ab4d33",
+        category: "circulation, climate",
+        tag: "Article · 2019",
+        title: "Ocean and atmosphere influence on the 2015 European heatwave",
+        authors: "JV Mecking, SS Drijfhout, JJM Hirschi, <strong>AT Blaker</strong>",
+        journal: "Environmental Research Letters 14 (11), 114035, 2019",
+        abstract: "During the summer of 2015, central Europe experienced a major heatwave that was preceded by anomalously cold sea surface temperatures (SSTs) in the northern North Atlantic. Recent observation-based studies found a correlation between North Atlantic SST in spring and European summer temperatures, suggesting potential for predictability. Here we show, by using a high-resolution climate model, that ocean temperature anomalies, in combination with matching atmospheric and sea-ice initial conditions were key to the development of the 2015 European heatwave. In a series of 30-member ensemble simulations we test different combinations of ocean temperature and salinity initial states versus non-initialised climatology, mediated in both ensembles by different atmospheric/sea-ice initial conditions, using a non-standard initialisation method without data-assimilation. With the best combination of the initial ocean, and matching atmosphere/sea-ice initial conditions, the ensemble mean temperature response over central Europe in this set-up equals 60% of the observed anomaly, with 6 out of 30 ensemble-members showing similar, or even larger surface air temperature anomalies than observed.",
+        link: "https://doi.org/10.1088/1748-9326/ab4d33"
+      },
+      {
+        doi: "10.1175/JPO-D-18-0236.1",
+        category: "circulation",
+        tag: "Article · 2019",
+        title: "Loop current variability as trigger of coherent gulf stream transport anomalies",
+        authors: "JJM Hirschi, E Frajka-Williams, <strong>AT Blaker</strong>, B Sinha, A Coward, P Hyder, ...",
+        journal: "Journal of Physical Oceanography 49 (8), 2115-2132, 2019",
+        abstract: "Satellite observations and output from a high-resolution ocean model are used to investigate how the Loop Current in the Gulf of Mexico affects the Gulf Stream transport through the Florida Straits. We find that the expansion (contraction) of the Loop Current leads to lower (higher) transports through the Straits of Florida. The associated surface velocity anomalies are coherent from the southwestern tip of Florida to Cape Hatteras. A simple continuity-based argument can be used to explain the link between the Loop Current and the downstream Gulf Stream transport: as the Loop Current lengthens (shortens) its path in the Gulf of Mexico, the flow out of the Gulf decreases (increases). Anomalies in the surface velocity field are first seen to the southwest of Florida and within 4 weeks propagate through the Florida Straits up to Cape Hatteras and into the Gulf Stream Extension. In both the observations and the model this propagation can be seen as pulses in the surface velocities. We estimate that the Loop Current variability can be linked to a variability of several Sverdrups (1Sv = 10<sup>6</sup> m<sup>3</sup> s<sup>−1</sup>) through the Florida Straits. The exact timing of the Loop Current variability is largely unpredictable beyond a few weeks and its variability is therefore likely a major contributor to the chaotic/intrinsic variability of the Gulf Stream. However, the time lag between the Loop Current and the flow downstream of the Gulf of Mexico means that if a lengthening/shortening of the Loop Current is observed this introduces some predictability in the downstream flow for a few weeks.",
+        link: "https://doi.org/10.1175/JPO-D-18-0236.1"
+      },
+      {
+        doi: "10.1007/s00382-019-04826-w",
+        category: "climate, modelling",
+        tag: "Article · 2019",
+        title: "Re-emergence of North Atlantic subsurface ocean temperature anomalies in a seasonal forecast system",
+        authors: "JP Grist, B Sinha, H Hewitt, A Duchez, C MacLachlan, P Hyder, SA Josey, ...",
+        journal: "Climate Dynamics, 1-22, 2019",
+        abstract: "A high-resolution coupled ocean atmosphere model is used to study the effects of seasonal re-emergence of North Atlantic subsurface ocean temperature anomalies on northern hemisphere winter climate. A 50-member control ensemble is integrated from 1 September 2007 to 28 February 2008 and compared with a parallel ensemble with perturbed ocean initial conditions. The perturbation consists of a density-compensated subsurface Atlantic temperature anomaly corresponding to the observed subsurface temperature anomaly for September 2010. The experiment is repeated for two atmosphere horizontal resolutions (~ 60 km and ~ 25 km) in order to determine whether the sensitivity of the atmosphere to re-emerging temperature anomalies is dependent on resolution. A wide range of re-emergence behavior is found within the perturbed ensembles. While the observations seem to indicate that most of the re-emergence is occurring in November, most members of the ensemble show re-emergence occurring later in the winter. However, when re-emergence does occur it is preceded by an atmospheric pressure pattern that induces a strong flow of cold, dry air over the mid-latitude Atlantic, and enhances oceanic latent heat loss. In response to re-emergence (negative SST anomalies), there is reduced latent heat loss, less atmospheric convection, a reduction in eddy kinetic energy and positive low-level pressure anomalies downstream. Within the framework of a seasonal forecast system the results highlight the atmospheric conditions required for re-emergence to take place and the physical processes that may lead to a significant effect on the winter atmospheric circulation.",
+        link: "http://dx.doi.org/10.1007/s00382-019-04826-w"
+      },
+      {
+        doi: "10.1029/2018jc014225",
+        category: "climate, modelling",
+        tag: "Article · 2019",
+        title: "Model‐Derived Uncertainties in Deep Ocean Temperature Trends Between 1990 and 2010",
+        authors: "F. K. Garry, E. L. McDonagh, <strong>A. T. Blaker</strong>, C. D. Roberts, D. G. Desbruy\u00e8res, Eleanor Frajka‐Williams, B. A. King",
+        journal: "Journal of Geophysical Research: Oceans, 124",
+        abstract: "We construct a novel framework to investigate the uncertainties and biases associated with estimates of deep ocean temperature change from hydrographic sections and demonstrate this framework in an eddy‐permitting ocean model. Biases in estimates from observations arise due to sparse spatial coverage (few sections in a basin), low frequency of occupations (typically 5-10 years apart), mismatches between the time period of interest and span of occupations, and from seasonal biases relating to the practicalities of sampling during certain times of year. Between the years 1990 and 2010, the modeled global abyssal ocean biases are small, although regionally some biases (expressed as a heat flux into the 4,000‐ to 6,000‐m layer) can be up to 0.05 W/m<sup>2</sup>. In this model, biases in the heat flux into the deep 2,000‐ to 4,000‐m layer, due to either temporal or spatial sampling uncertainties, are typically much larger and can be over 0.1 W/m<sup>2</sup> across an ocean. Overall, 82% of the warming trend deeper than 2,000 m is captured by hydrographic section‐style sampling in the model. At 2,000 m, only half the model global warming trend is obtained from observational‐style sampling, with large biases in the Atlantic, Southern, and Indian Oceans. Biases due to different sources of uncertainty can have opposing signs and differ in relative importance both regionally and with depth, revealing the importance of reducing temporal and spatial uncertainties in future deep ocean observing design.",
+        link: "https://doi.org/10.1029/2018jc014225"
+      },
+      {
+        doi: "10.1029/2018MS001370",
+        category: "modelling, climate",
+        tag: "Article · 2018",
+        title: "The low‐resolution version of HadGEM3 GC3. 1: Development and evaluation for global climate",
+        authors: "T Kuhlbrodt, CG Jones, A Sellar, D Storkey, E Blockley, M Stringer, R Hill, ...",
+        journal: "Journal of advances in modeling earth systems 10 (11), 2865-2888, 2018",
+        abstract: "A new climate model, HadGEM3 N96ORCA1, is presented that is part of the GC3.1 configuration of HadGEM3. N96ORCA1 has a horizontal resolution of ~135 km in the atmosphere and 1° in the ocean and requires an order of magnitude less computing power than its medium-resolution counterpart, N216ORCA025, while retaining a high degree of performance traceability. Scientific performance is compared to both observations and the N216ORCA025 model. N96ORCA1 reproduces observed climate mean and variability almost as well as N216ORCA025. Patterns of biases are similar across the two models. In the northwest Atlantic, N96ORCA1 shows a cold surface bias of up to 6 K, typical of ocean models of this resolution. The strength of the Atlantic meridional overturning circulation (16 to 17 Sv) matches observations. In the Southern Ocean, a warm surface bias (up to 2 K) is smaller than in N216ORCA025 and linked to improved ocean circulation. Model El Niño/Southern Oscillation and Atlantic Multidecadal Variability are close to observations. Both the cold bias in the Northern Hemisphere (N96ORCA1) and the warm bias in the Southern Hemisphere (N216ORCA025) develop in the first few decades of the simulations. As in many comparable climate models, simulated interhemispheric gradients of top-of-atmosphere radiation are larger than observations suggest, with contributions from both hemispheres. HadGEM3 GC3.1 N96ORCA1 constitutes the physical core of the UK Earth System Model (UKESM1) and will be used extensively in the Coupled Model Intercomparison Project 6 (CMIP6), both as part of the UK Earth System Model and as a stand-alone coupled climate model.",
+        link: "https://doi.org/10.1029/2018MS001370"
+      },
+      {
+        doi: "10.5194/gmd-11-3187-2018",
+        category: "modelling",
+        tag: "Article · 2018",
+        title: "UK Global Ocean GO6 and GO7: a traceable hierarchy of model resolutions",
+        authors: "David Storkey, <strong>Adam T. Blaker</strong>, Pierre Mathiot, Alex Megann, Yevgeny Aksenov, Edward W. Blockley, Daley Calvert, Tim Graham, Helene T. Hewitt, Patrick Hyder, Till Kuhlbrodt, Jamie G. L. Rae, Bablu Sinha",
+        journal: "Geoscientific Model Development, 11",
+        abstract: "Versions 6 and 7 of the UK Global Ocean configuration (known as GO6 and GO7) will form the ocean components of the Met Office GC3.1 coupled model and UKESM1 earth system model to be used in CMIP6 simulations. The label GO6 refers to a traceable hierarchy of three model configurations at nominal 1, 1/4 and 1/12 resolutions. The GO6 configurations are described in detail with particular focus on aspects which have been updated since the previous version (GO5). Results of 30-year forced ocean-ice integrations with the 1/4 model are presented, in which GO6 is coupled to the GSI8.1 sea ice configuration and forced with CORE2 fluxes. GO6-GSI8.1 shows an overall improved simulation compared to GO5-GSI5.0, especially in the Southern Ocean where there are more realistic summertime mixed layer depths, a reduced near-surface warm and saline biases, and an improved simulation of sea ice. The main drivers of the improvements in the Southern Ocean simulation are tuning of the vertical and isopycnal mixing parameters. Selected results from the full hierarchy of three resolutions are shown. Although the same forcing is applied, the three models show large-scale differences in the near-surface circulation and in the short-term adjustment of the overturning circulation. The GO7 configuration is identical to the GO6 1/4 configuration except that the cavities under the ice shelves are opened. Opening the ice shelf cavities has a local impact on temperature and salinity biases on the Antarctic shelf with some improvement in the biases in the Weddell Sea.",
+        link: "https://doi.org/10.5194/gmd-11-3187-2018"
+      },
+      {
+        doi: "10.1088/1748-9326/aace42",
+        category: "climate",
+        tag: "Article · 2018",
+        title: "Improved estimates of water cycle change from ocean salinity: the key role of ocean warming",
+        authors: "Jan D. Zika, Nikolaos Skliris, <strong>Adam T. Blaker</strong>, Robert Marsh, A. J. George Nurser, Simon A. Josey",
+        journal: "Environmental Research Letters, 13",
+        abstract: "Estimates of global water cycle changes derived from ocean salinity are updated by accounting for ocean warming. Using climate ocean reconstructions and NEMO hindcasts, the authors show that salinity trends are highly sensitive to surface warming and buoyancy fluxes. The study demonstrates that warming increases surface stratification, and factoring this into ocean salinity models yields a more coherent estimate of water cycle amplification over recent decades.",
+        link: "https://doi.org/10.1088/1748-9326/aace42"
+      },
+      {
+        doi: "10.1016/j.pocean.2018.01.011",
+        category: "circulation",
+        tag: "Article · 2018",
+        title: "A window on the deep ocean: the special value of ocean bottom pressure for monitoring the large-scale, deep-ocean circulation",
+        authors: "CW Hughes, J Williams, <strong>A Blaker</strong>, A Coward, V Stepanov",
+        journal: "Progress in Oceanography 161, 19-46, 2018",
+        abstract: "We show how, by focusing on bottom pressure measurements particularly on the global continental slope, it is possible to avoid the “fog” of mesoscale variability which dominates most observables in the deep ocean. This makes it possible to monitor those aspects of the ocean circulation which are most important for global scale ocean variability and climate. We therefore argue that such measurements should be considered an important future component of the Global Ocean Observing System, to complement the present open-ocean and coastal elements. Our conclusions are founded on both theoretical arguments, and diagnostics from a fine-resolution ocean model that has realistic amplitudes and spectra of mesoscale variability. These show that boundary pressure variations are coherent over along-slope distances of tens of thousands of kilometres, for several vertical modes. We illustrate the value of this in the model Atlantic, by determining the time for boundary and equatorial waves to complete a circuit of the northern basin (115 and 205 days for the first and second vertical modes), showing how the boundary features compare with basin-scale theoretical models, and demonstrating the ability to monitor the meridional overturning circulation using these boundary measurements. Finally, we discuss applicability to the real ocean and make recommendations on how to make such measurements without contamination from instrumental drift.",
+        link: "https://doi.org/10.1016/j.pocean.2018.01.011"
+      },
+      {
+        doi: "10.1016/j.pocean.2017.12.001",
+        category: "circulation, modelling",
+        tag: "Article · 2018",
+        title: "The accuracy of estimates of the overturning circulation from basin-wide mooring arrays",
+        authors: "Bablu Sinha, D.A. Smeed, Gerard McCarthy, Ben I. Moat, Simon A. Josey, Jo\u00ebl J.J.-M. Hirschi, Eleanor Frajka-Williams, <strong>Adam T. Blaker</strong>, David Rayner, Gurvan Madec",
+        journal: "Progress in Oceanography, 160",
+        abstract: "Previous modeling and observational studies have established that it is possible to accurately monitor the Atlantic Meridional Overturning Circulation (AMOC) at 26.5°N using a coast-to-coast array of instrumented moorings supplemented by direct transport measurements in key boundary regions (the RAPID/MOCHA/WBTS Array). The main sources of observational and structural errors have been identified in a variety of individual studies. Here a unified framework for identifying and quantifying structural errors associated with the RAPID array-based AMOC estimates is established using a high-resolution (eddy resolving at low-mid latitudes, eddy permitting elsewhere) ocean general circulation model, which simulates the ocean state between 1978 and 2010. We define a virtual RAPID array in the model in close analogy to the real RAPID array and compare the AMOC estimate from the virtual array with the true model AMOC. The model analysis suggests that the RAPID method underestimates the mean AMOC by ∼1.5 Sv (1 Sv = 10<sup>6</sup> m<sup>3</sup> s<sup>−1</sup>) at ∼900 m depth, however it captures the variability to high accuracy. We examine three major contributions to the streamfunction bias: (i) due to the assumption of a single fixed reference level for calculation of geostrophic transports, (ii) due to regions not sampled by the array and (iii) due to ageostrophic transport. A key element in (i) and (iii) is use of the model sea surface height to establish the true (or absolute) geostrophic transport. In the upper 2000 m, we find that the reference level bias is strongest and most variable in time, whereas the bias due to unsampled regions is largest below 3000 m. The ageostrophic transport is significant in the upper 1000 m but shows very little variability. The results establish, for the first time, the uncertainty of the AMOC estimate due to the combined structural errors in the measurement design and suggest ways in which the error could be reduced. Our work has applications to basin-wide circulation measurement arrays at other latitudes and in other basins as well as quantifying systematic errors in ocean model estimates of the AMOC at 26.5°N.",
+        link: "https://doi.org/10.1016/j.pocean.2017.12.001"
+      },
+      {
+        doi: "10.5194/gmd-10-1789-2017",
+        category: "uncertainty, modelling",
+        tag: "Article · 2017",
+        title: "Tuning without over-tuning: parametric uncertainty quantification for the NEMO ocean model",
+        authors: "Daniel B. Williamson, <strong>Adam T. Blaker</strong>, Bablu Sinha",
+        journal: "Geoscientific Model Development, 10, 1789–1816",
+        abstract: "In this paper we discuss climate model tuning and present an iterative automatic tuning method from the statistical science literature. The method, which we refer to here as iterative refocussing (though also known as history matching), avoids many of the common pitfalls of automatic tuning procedures that are based on optimisation of a cost function, principally the over-tuning of a climate model due to using only partial observations. This avoidance comes by seeking to rule out parameter choices that we are confident could not reproduce the observations, rather than seeking the model that is closest to them (a procedure that risks over-tuning). We comment on the state of climate model tuning and illustrate our approach through three waves of iterative refocussing of the NEMO (Nucleus for European Modelling of the Ocean) ORCA2 global ocean model run at 2° resolution. We show how at certain depths the anomalies of global mean temperature and salinity in a standard configuration of the model exceeds 10 standard deviations away from observations and show the extent to which this can be alleviated by iterative refocussing without compromising model performance spatially. We show how model improvements can be achieved by simultaneously perturbing multiple parameters, and illustrate the potential of using low-resolution ensembles to tune NEMO ORCA configurations at higher resolutions.",
+        link: "https://doi.org/10.5194/gmd-10-1789-2017"
+      },
+      {
+        doi: "10.1002/2016jc011660",
+        category: "circulation, modelling",
+        tag: "Article · 2016",
+        title: "Major variations in subtropical North Atlantic heat transport at short (5 day) timescales and their causes",
+        authors: "Ben I. Moat, Simon A. Josey, Bablu Sinha, <strong>Adam T. Blaker</strong>, D. A. Smeed, Gerard D. McCarthy, W. E. Johns, Jo\u00ebl J.‐M. Hirschi, Eleanor Frajka‐Williams, David Rayner, A. Duchez, Andrew C. Coward",
+        journal: "Journal of Geophysical Research: Oceans, 121",
+        abstract: "Variability in the North Atlantic ocean heat transport at 26.5°N on short (5 day) timescales is identified and contrasted with different behaviour at monthly intervals using a combination of RAPID/MOCHA/WBTS measurements and the NEMO‐LIM2 1/12° ocean circulation/sea ice model. Wind forcing plays the leading role in establishing the heat transport variability through the Ekman transport response of the ocean and the associated driving atmospheric conditions vary significantly with timescale. We find that at 5 day timescales the largest changes in the heat transport across 26.5°N coincide with north‐westerly airflows originating over the American land mass that drive strong southward anomalies in the Ekman flow. During these events the northward heat transport reduces by 0.5-1.4 PW. In contrast, the Ekman transport response at longer monthly timescales is smaller in magnitude (up to 0.5 PW) and consistent with expected variations in the leading mode of North Atlantic atmospheric variability, the North Atlantic Oscillation. The north‐westerly airflow mechanism can have a prolonged influence beyond the central 5 day timescale and on occasion can reduce the accumulated winter ocean heat transport into the North Atlantic by ∼40%.",
+        link: "https://doi.org/10.1002/2016jc011660"
+      },
+      {
+        doi: "10.1007/s00382-014-2378-z",
+        category: "uncertainty, modelling",
+        tag: "Article · 2015",
+        title: "Identifying and removing structural biases in climate models with history matching",
+        authors: "Daniel Williamson, <strong>Adam T. Blaker</strong>, Charlotte Hampton, James Salter",
+        journal: "Climate Dynamics, 45, 1299-1324",
+        abstract: "We describe the method of history matching, a method currently used to help quantify parametric uncertainty in climate models, and argue for its use in identifying and removing structural biases in climate models at the model development stage. We illustrate the method using an investigation of the potential to improve upon known ocean circulation biases in a coupled non-flux-adjusted climate model (the third Hadley Centre Climate Model; HadCM3). In particular, we use history matching to investigate whether or not the behaviour of the Antarctic Circumpolar Current (ACC), which is known to be too strong in HadCM3, represents a structural bias that could be corrected using the model parameters. We find that it is possible to improve the ACC strength using the parameters and observe that doing this leads to more realistic representations of the sub-polar and sub-tropical gyres, sea surface salinities (both globally and in the North Atlantic), sea surface temperatures in the sinking regions in the North Atlantic and in the Southern Ocean, North Atlantic Deep Water flows, global precipitation, wind fields and sea level pressure. We then use history matching to locate a region of parameter space predicted not to contain structural biases for ACC and SSTs that is around 1 % of the original parameter space. We explore qualitative features of this space and show that certain key ocean and atmosphere parameters must be tuned carefully together in order to locate climates that satisfy our chosen metrics. Our study shows that attempts to tune climate model parameters that vary only a handful of parameters relevant to a given process at a time will not be as successful or as efficient as history matching.",
+        link: "https://doi.org/10.1007/s00382-014-2378-z"
+      },
+      {
+        doi: "10.1016/j.jmarsys.2014.10.007",
+        category: "modelling, circulation, climate",
+        tag: "Article · 2015",
+        title: "The North Atlantic subpolar circulation in an eddy-resolving global ocean model",
+        authors: "A Marzocchi, JJM Hirschi, NP Holliday, SA Cunningham, <strong>AT Blaker</strong>, ...",
+        journal: "Journal of Marine Systems 142, 126-143, 2015",
+        abstract: "The subpolar North Atlantic represents a key region for global climate, but most numerical models still have well-described limitations in correctly simulating the local circulation patterns. Here, we present the analysis of a 30-year run with a global eddy-resolving (1/12°) version of the NEMO ocean model. Compared to the 1° and 1/4° equivalent versions, this simulation more realistically represents the shape of the Subpolar Gyre, the position of the North Atlantic Current, and the Gulf Stream separation. Other key improvements are found in the representation of boundary currents, multi-year variability of temperature and depth of winter mixing in the Labrador Sea, and the transport of overflows at the Greenland–Scotland Ridge. However, the salinity, stratification and mean depth of winter mixing in the Labrador Sea, and the density and depth of overflow water south of the sill, still present challenges to the model. This simulation also provides further insight into the spatio-temporal development of the warming event observed in the Subpolar Gyre in the mid 1990s, which appears to coincide with a phase of increased eddy activity in the southernmost part of the gyre. This may have provided a gateway through which heat would have propagated into the gyre's interior.",
+        link: "https://doi.org/10.1016/j.jmarsys.2014.10.007"
+      },
+      {
+        doi: "10.5194/gmd-8-1547-2015",
+        category: "modelling",
+        tag: "Article · 2015",
+        title: "NEMO-ICB (v1.0): interactive icebergs in the NEMO ocean model globally configured at eddy-permitting resolution",
+        authors: "Robert Marsh, V. O. Ivchenko, Nikolaos Skliris, Steven Alderson, G. R. Bigg, Gurvan Madec, <strong>Adam T. Blaker</strong>, Yevgeny Aksenov, Bablu Sinha, Andrew C. Coward, J. Le Sommer, N. Merino, V. B. Zalesny",
+        journal: "Geoscientific Model Development, 8, 1547–1562",
+        abstract: "An established iceberg module, ICB, is used interactively with the Nucleus for European Modelling of the Ocean (NEMO) ocean model in a new implementation, NEMO-ICB (v1.0). A 30-year hindcast (1976-2005) simulation with an eddy-permitting (0.25°) global configuration of NEMO-ICB is undertaken to evaluate the influence of icebergs on sea ice, hydrography, mixed layer depths (MLDs), and ocean currents, through comparison with a control simulation in which the equivalent iceberg mass flux is applied as coastal runoff, a common forcing in ocean models. In the Southern Hemisphere (SH), drift and melting of icebergs are in balance after around 5 years, whereas the equilibration timescale for the Northern Hemisphere (NH) is 15-20 years. Iceberg drift patterns, and Southern Ocean iceberg mass, compare favourably with available observations. Freshwater forcing due to iceberg melting is most pronounced very locally, in the coastal zone around much of Antarctica, where it often exceeds in magnitude and opposes the negative freshwater fluxes associated with sea ice freezing. However, at most locations in the polar Southern Ocean, the annual-mean freshwater flux due to icebergs, if present, is typically an order of magnitude smaller than the contribution of sea ice melting and precipitation. A notable exception is the southwest Atlantic sector of the Southern Ocean, where iceberg melting reaches around 50% of net precipitation over a large area. Including icebergs in place of coastal runoff, sea ice concentration and thickness are notably decreased at most locations around Antarctica, by up to ~ 20% in the eastern Weddell Sea, with more limited increases, of up to ~ 10% in the Bellingshausen Sea. Antarctic sea ice mass decreases by 2.9%, overall. As a consequence of changes in net freshwater forcing and sea ice, salinity and temperature distributions are also substantially altered. Surface salinity increases by ~ 0.1 psu around much of Antarctica, due to suppressed coastal runoff, with extensive freshening at depth, extending to the greatest depths in the polar Southern Ocean where discernible effects on both salinity and temperature reach 2500 m in the Weddell Sea by the last pentad of the simulation. Substantial physical and dynamical responses to icebergs, throughout the global ocean, are explained by rapid propagation of density anomalies from high-to-low latitudes. Complementary to the baseline model used here, three prototype modifications to NEMO-ICB are also introduced and discussed.",
+        link: "https://doi.org/10.5194/gmd-8-1547-2015"
+      },
+      {
+        doi: "10.1007/s00382-014-2274-6",
+        category: "circulation, climate",
+        tag: "Article · 2014",
+        title: "Historical analogues of the recent extreme minima observed in the Atlantic meridional overturning circulation at 26°N",
+        authors: "<strong>Adam T. Blaker</strong>, Joel J.-M. Hirschi, Gerard McCarthy, Bablu Sinha, Sarah Taws, Robert Marsh, Andrew Coward, Beverly de Cuevas",
+        journal: "Climate Dynamics, 44",
+        abstract: "Observations of the Atlantic meridional overturning circulation (AMOC) by the RAPID 26°N array show a pronounced minimum in the northward transport over the winter of 2009/10, substantially lower than any observed since the initial deployment in April 2004. It was followed by a second minimum in the winter of 2010/2011. We demonstrate that ocean models forced with observed surface fluxes reproduce the observed minima. Examining output from five ocean model simulations we identify several historical events which exhibit similar characteristics to those observed in the winter of 2009/10, including instances of individual events, and two clear examples of pairs of events which happened in consecutive years, one in 1969/70 and another in 1978/79. In all cases the absolute minimum, associated with a short, sharp reduction in the Ekman component, occurs in winter. AMOC anomalies are coherent between the Equator and 50°N and in some cases propagation attributable to the poleward movement of the anomaly in the wind field is observed. We also observe a low frequency (decadal) mode of variability in the anomalies, associated with the North Atlantic Oscillation (NAO). Where pairs of events have occurred in consecutive years we find that atmospheric conditions during the first winter correspond to a strongly negative Arctic Oscillation (AO) index. Atmospheric conditions during the second winter are indicative of a more regional negative NAO phase, and we suggest that this persistence is linked to re-emergence of sea surface temperature anomalies in the North Atlantic for the events of 1969/70 and 2009/10. The events of 1978/79 do not exhibit re-emergence, indicating that the atmospheric memory for this pair of events originates elsewhere. Observation of AO patterns associated with cold winters over northwest Europe may be indicative for the occurrence of a second extreme winter over northwest Europe.",
+        link: "https://doi.org/10.1007/s00382-014-2274-6"
+      },
+      {
+        doi: "10.1002/2014gl061456",
+        category: "climate, modelling",
+        tag: "Article · 2014",
+        title: "Surface warming hiatus caused by increased heat uptake across multiple ocean basins",
+        authors: "Sybren S. Drijfhout, <strong>Adam T. Blaker</strong>, Simon A. Josey, A. J. George Nurser, Bablu Sinha, M. A. Balmaseda",
+        journal: "Geophysical Research Letters, 41",
+        abstract: "The first decade of the 21st century was characterized by a hiatus in global surface warming. Using ocean model hindcasts and reanalyses we show that heat uptake between the 1990s and 2000s increased by 0.7 +/- 0.3 W m<sup>−2</sup>. Approximately 30% of the increase is associated with colder sea surface temperatures in the eastern Pacific. Other basins contribute via reduced heat loss to the atmosphere, in particular, the Southern and subtropical Indian Oceans (30%) and the subpolar North Atlantic (40%). A different mechanism is important at longer timescales (1960s - present) over which the Southern Annular Mode trended upward. In this period, increased ocean heat uptake has largely arisen from reduced heat loss associated with reduced winds over the Agulhas Return Current and southward displacement of Southern Ocean westerlies.",
+        link: "https://doi.org/10.1002/2014gl061456"
+      },
+      {
+        doi: "10.1175/JCLI-D-13-00052.1",
+        category: "circulation",
+        tag: "Article · 2014",
+        title: "A new index for the Atlantic Meridional Overturning Circulation at 26 N",
+        authors: "A Duchez, JJM Hirschi, SA Cunningham, <strong>AT Blaker</strong>, HL Bryden, ...",
+        journal: "Journal of Climate 27 (17), 6439-6455, 2014",
+        abstract: "The Atlantic meridional overturning circulation (AMOC) has received considerable attention, motivated by its major role in the global climate system. Observations of AMOC strength at 26°N made by the Rapid Climate Change (RAPID) array provide the best current estimate of the state of the AMOC. The period 2004–11 when RAPID AMOC is available is too short to assess decadal variability of the AMOC. This modeling study introduces a new AMOC index (called AMOCSV) at 26°N that combines the Florida Straits transport, the Ekman transport, and the southward geostrophic Sverdrup transport. The main hypothesis in this study is that the upper midocean geostrophic transport calculated using the RAPID array is also wind-driven and can be approximated by the geostrophic Sverdrup transport at interannual and longer time scales. This index is expected to reflect variations in the AMOC at interannual to decadal time scales. This estimate of the surface branch of the AMOC can be constructed as long as reliable measurements are available for the Gulf Stream and for wind stress. To test the reliability of the AMOCSV on interannual and longer time scales, two different numerical simulations are used: a forced and a coupled simulation. Using these simulations the AMOCSV captures a substantial fraction of the AMOC variability and is in good agreement with the AMOC transport at 26°N on both interannual and decadal time scales. These results indicate that it might be possible to extend the observation-based AMOC at 26°N back to the 1980s.",
+        link: "https://doi.org/10.1175/JCLI-D-13-00052.1"
+      },
+      {
+        doi: "10.1175/JCLI-D-13-00070.1",
+        category: "circulation",
+        tag: "Article · 2014",
+        title: "The surface-forced overturning of the North Atlantic: Estimates from modern era atmospheric reanalysis datasets",
+        authors: "JP Grist, SA Josey, R Marsh, YO Kwon, RJ Bingham, <strong>AT Blaker</strong>",
+        journal: "Journal of climate 27 (10), 3596-3618, 2014",
+        abstract: "Estimates of the recent mean and time varying water mass transformation rates associated with North Atlantic surface-forced overturning are presented. The estimates are derived from heat and freshwater surface fluxes and sea surface temperature fields from six atmospheric reanalyses—the Japanese 25-yr Reanalysis (JRA), the NCEP–NCAR reanalysis (NCEP1), the NCEP–U.S. Department of Energy (DOE) reanalysis (NCEP2), the European Centre for Medium-Range Weather Forecasts (ECMWF) Interim Re-Analysis (ERA-I), the Climate Forecast System Reanalysis (CFSR), and the Modern-Era Reanalysis for Research and Applications (MERRA)—together with sea surface salinity fields from two globally gridded datasets (World Ocean Atlas and Met Office EN3 datasets). The resulting 12 estimates of the 1979–2007 mean surface-forced streamfunction all depict a subpolar cell, with maxima north of 45°N, near σ = 27.5 kg m<sup>−3</sup>, and a subtropical cell between 20° and 40°N, near σ = 26.1 kg m<sup>−3</sup>. The mean magnitude of the subpolar cell varies between 12 and 18 Sv (1 Sv ≡ 10<sup>6</sup> m<sup>3</sup> s<sup>−1</sup>), consistent with estimates of the overturning circulation from subsurface observations. Analysis of the thermal and haline components of the surface density fluxes indicates that large differences in the inferred low-latitude circulation are largely a result of the biases in reanalysis net heat flux fields, which range in the global mean from −13 to 19 W m<sup>−2</sup>. The different estimates of temporal variability in the subpolar cell are well correlated with each other. This suggests that the uncertainty associated with the choice of reanalysis product does not critically limit the ability of the method to infer the variability in the subpolar overturning. In contrast, the different estimates of subtropical variability are poorly correlated with each other, and only a subset of them captures a significant fraction of the variability in independently estimated North Atlantic Subtropical Mode Water volume.",
+        link: "https://doi.org/10.1175/JCLI-D-13-00070.1"
+      },
+      {
+        doi: "10.1175/MWR-D-13-00104.1",
+        category: "climate",
+        tag: "Article · 2014",
+        title: "North Atlantic SST anomalies and the cold North European weather events of winter 2009/10 and December 2010",
+        authors: "J Buchan, JJM Hirschi, <strong>AT Blaker</strong>, B Sinha",
+        journal: "Monthly Weather Review 142 (2), 922-932, 2014",
+        abstract: "Northern Europe experienced consecutive periods of extreme cold weather in the winter of 2009/10 and in late 2010. These periods were characterized by a tripole pattern in North Atlantic sea surface temperature (SST) anomalies and exceptionally negative phases of the North Atlantic Oscillation (NAO). A global ocean–atmosphere general circulation model (OAGCM) is used to investigate the ocean’s role in influencing North Atlantic and European climate. Observed SST anomalies are used to force the atmospheric model and the resultant changes in atmospheric conditions over northern Europe are examined. Different atmospheric responses occur in the winter of 2009/10 and the early winter of 2010. These experiments suggest that North Atlantic SST anomalies did not significantly affect the development of the negative NAO phase in the cold winter of 2009/10. However, in November and December 2010 the large-scale North Atlantic SST anomaly pattern leads to a significant shift in the atmospheric circulation over the North Atlantic toward a NAO negative phase. Therefore, these results indicate that SST anomalies in November/December 2010 were particularly conducive to the development of a negative NAO phase, which culminated in the extreme cold weather conditions experienced over northern Europe in December 2010.",
+        link: "https://doi.org/10.1175/MWR-D-13-00104.1"
+      },
+      {
+        doi: "10.1137/120900915",
+        category: "modelling",
+        tag: "Article · 2014",
+        title: "Evolving Bayesian emulators for structured chaotic time series, with application to large climate models",
+        authors: "D Williamson, <strong>AT Blaker</strong>",
+        journal: "SIAM/ASA Journal on Uncertainty Quantification 2 (1), 1-28, 2014",
+        abstract: "We develop Bayesian dynamic linear model Gaussian processes for emulation of time series output for computer models that may exhibit chaotic behavior, but where this behavior retains some underlying structure. The statistical technology is particularly suited to emulating the time series output of large climate models that exhibit this feature and where we want samples from the posterior of the emulator to evolve in the same way as dynamic processes in the computer model do. The methodology combines key features of good uncertainty quantification (UQ) methods such as using complex mean functions to capture large-scale signals within parameter space, with dynamic linear models in a way that allows UQ to borrow strength from the Bayesian time series literature. We present an MCMC algorithm for sampling from the posterior of the emulator parameters when the roughness lengths of the Gaussian process are unknown. We discuss an interpretation of the results of this algorithm that allows us to use MCMC to fix the correlation lengths, making future online samples from the emulator tractable when used in practical applications where online MCMC is infeasible. We apply this methodology to emulate the Atlantic Meridional Overturning Circulation (AMOC) as a time series output of the fully coupled non--flux-adjusted atmosphere-ocean general circulation model HadCM3.",
+        link: "https://doi.org/10.1137/120900915"
+      },
+      {
+        doi: "10.1175/jpo-d-13-092.1",
+        category: "circulation, modelling",
+        tag: "Article · 2013",
+        title: "On the Near-Inertial Resonance of the Atlantic Meridional Overturning Circulation",
+        authors: "Florian Sevellec, Joel J.-M. Hirschi, <strong>Adam T. Blaker</strong>",
+        journal: "Journal of Physical Oceanography, 43",
+        abstract: "The Atlantic meridional overturning circulation (AMOC) is a crucial component of the global climate system. It is responsible for around a quarter of the global northward heat transport and contributes to the mild European climate. Observations and numerical models suggest a wide range of AMOC variability. Recent results from an ocean general circulation model (OGCM) in a high-resolution configuration (1/4°) suggest the existence of superinertial variability of the AMOC. In this study, the validity of this result in a theoretical framework is tested. At a low Rossby number and in the presence of Rayleigh friction, it is demonstrated that, unlike a typical forced damped oscillator (which shows subinertial resonance), the AMOC undergoes both super- and subinertial resonances (except at low latitudes and for high friction). A dimensionless number Sr, measuring the ratio of ageo- to geostrophic forcing (i.e., the zonal versus meridional pressure gradients), indicates which of these resonances dominates. If Sr ≪ 1, the AMOC variability is mainly driven by geostrophic forcing and shows subinertial resonance. Alternatively and consistent with the recently published 1/4° OGCM experiments, if Sr ≫ 1, the AMOC variability is mainly driven by the ageostrophic forcing and shows superinertial resonance. In both regimes, a forcing of K induces an AMOC variability of 10 Sv (1 Sv ≡ 10<sup>6</sup> m<sup>3</sup> s<sup>-1</sup>) through these near-inertial resonance phenomena. It is also shown that, as expected from numerical simulations, the spatial structure of the near-inertial AMOC variability corresponds to equatorward-propagating waves equivalent to baroclinic Poincare waves. The long-time average of this resonance phenomenon, raising and depressing the pycnocline, could contribute to the mixing of the ocean stratification.",
+        link: "https://doi.org/10.1175/jpo-d-13-092.1"
+      },
+      {
+        doi: "10.1175/JPO-D-13-091.1",
+        category: "circulation, modelling",
+        tag: "Article · 2013",
+        title: "Acceleration of the Antarctic Circumpolar Current by wind stress along the coast of Antarctica",
+        authors: "JD Zika, J Le Sommer, CO Dufour, A Naveira-Garabato, <strong>A Blaker</strong>",
+        journal: "Journal of Physical Oceanography 43 (12), 2772-2784, 2013",
+        abstract: "The influence of wind forcing on variability of the Antarctic Circumpolar Current (ACC) is investigated using a series of eddy-permitting ocean–sea ice models. At interannual and decadal time scales the ACC transport is sensitive to both the mean strength of westerly winds along the ACC circumpolar path, consistent with zonal momentum balance theories, and sensitive to the wind stresses along the coast of Antarctica, consistent with the “free mode” theory of Hughes et al. A linear combination of the two factors explains differences in ACC transport across 11 regional quasi-equilibrium experiments. Repeated single-year global experiments show that the ACC can be robustly accelerated by both processes. Across an ensemble of simulations with realistic forcing over the second half of the twentieth century, interannual ACC transport variability owing to the free-mode mechanism exceeds that due to the zonal momentum balance mechanism by a factor of between 3.5 and 5 to one. While the ACC transport may not accelerate significantly owing to projected increases in along-ACC winds in future decades, significant changes in transport could still occur because of changes in the stress along the coast of Antarctica.",
+        link: "https://doi.org/10.1175/JPO-D-13-091.1"
+      },
+      {
+        doi: "10.5194/os-9-805-2013",
+        category: "circulation",
+        tag: "Article · 2013",
+        title: "Chaotic variability of the meridional overturning circulation on subannual to interannual timescales",
+        authors: "JJM Hirschi, <strong>AT Blaker</strong>, B Sinha, A Coward, B De Cuevas, S Alderson, ...",
+        journal: "Ocean Science 9 (5), 805-823, 2013",
+        abstract: "Observations and numerical simulations have shown that the meridional overturning circulation (MOC) exhibits substantial variability on sub- to interannual timescales. This variability is not fully understood. In particular it is not known what fraction of the MOC variability is caused by processes such as mesoscale ocean eddies and waves which are ubiquitous in the ocean. Here we analyse twin experiments performed with a global ocean model at eddying (1/4°) and non-eddying (1°) resolutions. The twin experiments are forced with the same surface fluxes for the 1958 to 2001 period but start from different initial conditions. Our results show that on subannual to interannual timescales a large fraction of MOC variability directly reflects variability in the surface forcing. Nevertheless, in the eddy-permitting case there is an initial-condition-dependent MOC variability (hereinafter referred to as \"chaotic\" variability) of several Sv (1 Sv = 10<sup>6</sup> m<sup>3</sup> s<sup>−1</sup>) in the Atlantic and the Indo-Pacific. In the Atlantic the chaotic MOC variability represents up to 30% of the total variability at the depths where the maximum MOC occurs. In comparison the chaotic MOC variability is only 5–10% in the non-eddying case. The surface forcing being almost identical in the twin experiments suggests that mesoscale ocean eddies are the most likely cause for the increased chaotic MOC variability in the eddying case. The exact formation time of eddies is determined by the initial conditions which are different in the two model passes, and as a consequence the mesoscale eddy field is decorrelated in the twin experiments. In regions where eddy activity is high in the eddy-permitting model, the correlation of sea surface height variability in the twin runs is close to zero. In the non-eddying case in contrast, we find high correlations (0.9 or higher) over most regions. Looking at the sub- and interannual MOC components separately reveals that most of the chaotic MOC variability is found on subannual timescales for the eddy-permitting model. On interannual timescales the amplitude of the chaotic MOC variability is much smaller and the amplitudes are comparable for both the eddy-permitting and non-eddy-permitting model resolutions. Whereas the chaotic MOC variability on interannual timescales only accounts for a small fraction of the total chaotic MOC variability in the eddy-permitting case, it is the main contributor to the chaotic variability in the non-eddying case away from the Equator.",
+        link: "https://doi.org/10.5194/os-9-805-2013"
+      },
+      {
+        doi: "10.1007/s00382-013-1896-4",
+        category: "uncertainty, modelling",
+        tag: "Article · 2013",
+        title: "History matching for exploring and reducing climate model parameter space using observations and a large perturbed physics ensemble",
+        authors: "Daniel Williamson, Michael Goldstein, Lesley Allison, <strong>Adam Blaker</strong>, Peter Challenor, Laura Jackson, Kuniko Yamazaki",
+        journal: "Climate Dynamics, 41",
+        abstract: "We apply an established statistical methodology called history matching to constrain the parameter space of a coupled non-flux-adjusted climate model (the third Hadley Centre Climate Model; HadCM3) by using a 10,000-member perturbed physics ensemble and observational metrics. History matching uses emulators (fast statistical representations of climate models that include a measure of uncertainty in the prediction of climate model output) to rule out regions of the parameter space of the climate model that are inconsistent with physical observations given the relevant uncertainties. Our methods rule out about half of the parameter space of the climate model even though we only use a small number of historical observations. We explore 2 dimensional projections of the remaining space and observe a region whose shape mainly depends on parameters controlling cloud processes and one ocean mixing parameter. We find that global mean surface air temperature (SAT) is the dominant constraint of those used, and that the others provide little further constraint after matching to SAT. The Atlantic meridional overturning circulation (AMOC) has a non linear relationship with SAT and is not a good proxy for the meridional heat transport in the unconstrained parameter space, but these relationships are linear in our reduced space. We find that the transient response of the AMOC to idealised CO<sub>2</sub> forcing at 1 and 2% per year shows a greater average reduction in strength in the constrained parameter space than in the unconstrained space. We test extended ranges of a number of parameters of HadCM3 and discover that no part of the extended ranges can by ruled out using any of our constraints. Constraining parameter space using easy to emulate observational metrics prior to analysis of more complex processes is an important and powerful tool. It can remove complex and irrelevant behaviour in unrealistic parts of parameter space, allowing the processes in question to be more easily studied or emulated, perhaps as a precursor to the application of further relevant constraints.",
+        link: "https://doi.org/10.1007/s00382-013-1896-4"
+      },
+      {
+        doi: "10.1002/jgrd.50304",
+        category: "uncertainty, modelling",
+        tag: "Article · 2013",
+        title: "Obtaining diverse behaviors in a climate model without the use of flux adjustments",
+        authors: "K Yamazaki, DJ Rowlands, T Aina, <strong>AT Blaker</strong>, A Bowery, N Massey, ...",
+        journal: "Journal of Geophysical Research: Atmospheres 118 (7), 2781-2793, 2013",
+        abstract: "A number of studies have set out to obtain a range of atmosphere and ocean model behavior by perturbing parameters in a single climate model (perturbed physics ensemble: PPE). Early studies used shallow layer slab ocean or flux-adjusted coupled ocean-atmosphere models to obtain a broad range of behavior as characterized by climate sensitivity. A recent study reports a relatively narrow range of sensitivities (2.2-3.2°C) in a PPE of 35 coupled models without flux adjustment, raising the question whether previous broad ranges were an artifact of the use of models that were not in top-of-atmosphere (TOA) energy balance. Moreover, no PPE experiment has reported a large spread of behavior of the ocean compared to that exhibited in a multi-model ensemble (MME) such as Coupled Model Intercomparison Project phase 3 (CMIP3). In this work, we randomly perturb model parameters of a coupled ocean-atmosphere general circulation model using a space-filling design containing 10,000 combinations. The ensemble is run over the distributed computing platform of climateprediction.net under fixed pre-industrial forcing without flux adjustment. We resample a second, 20,000-member, ensemble with perturbations conditioned on the TOA fluxes from the first ensemble to not drift significantly from a realistic base state while targeting a range of behavior. Models within the targeted ensemble show realistic regional control climates when compared to the CMIP3 ensemble, although there is a bias in global mean surface temperature. The range of predicted equilibrium climate sensitivities of the targeted ensemble is substantially smaller than that obtained with flux adjustment, but larger than the range in the CMIP3 ensemble or in the 35-model un-flux-adjusted PPE in a recent study mentioned above. The Atlantic meridional overturning circulation in the targeted ensemble exhibits a spread in strength as wide as that found in the CMIP3 ensemble. We conclude that flux adjustment is not a pre-requisite for obtaining a broad spread of behavior in a perturbed physics ensemble.",
+        link: "https://doi.org/10.1002/jgrd.50304"
+      },
+      {
+        doi: "10.1175/JPO-D-12-0126.1",
+        category: "circulation, modelling",
+        tag: "Article · 2013",
+        title: "Influence of bottom topography on integral constraints in zonal flows with parameterized potential vorticity fluxes",
+        authors: "VO Ivchenko, B Sinha, VB Zalesny, R Marsh, <strong>AT Blaker</strong>",
+        journal: "Journal of physical oceanography 43 (2), 311-323, 2013",
+        abstract: "An integral constraint for eddy fluxes of potential vorticity (PV), corresponding to global momentum conservation, is applied to two-layer zonal quasigeostrophic channel flow. This constraint must be satisfied for any type of parameterization of eddy PV fluxes. Bottom topography strongly influences the integral constraint compared to a flat bottom channel. An analytical solution for the mean flow solution has been found by using asymptotic expansion in a small parameter, which is the ratio of the Rossby radius to the meridional extent of the channel. Applying the integral constraint to this solution, one can find restrictions for eddy PV transfer coefficients that relate the eddy fluxes of PV to the mean flow. These restrictions strongly deviate from restrictions for the channel with flat bottom topography.",
+        link: "https://doi.org/10.1175/JPO-D-12-0126.1"
+      },
+      {
+        doi: "10.1029/2012JC008334",
+        category: "modelling",
+        tag: "Article · 2013",
+        title: "A numerical model study of the effects of interannual time scale wave propagation on the predictability of the Atlantic meridional overturning circulation",
+        authors: "B Sinha, B Topliss, <strong>AT Blaker</strong>, J J-M Hirschi",
+        journal: "Journal of Geophysical Research: Oceans 118 (1), 131-146, 2013",
+        abstract: "We investigate processes leading to uncertainty in forecasts of the Atlantic meridional overturning circulation (AMOC). A climate model is used to supply initial conditions for ensemble simulations in which members initially have identical ocean states but perturbed atmosphere states. Baroclinic transports diverge on interannual time scales even though the ocean is not eddy-permitting. Interannual fluctuations of the model AMOC in the subtropical gyre are caused by westward propagating Rossby waves. Divergence of the predicted AMOC with time occurs because the waves develop different phases in different ensemble members predominantly due to differences in eastern boundary windstress curl. These windstress fluctuations communicate with interior ocean transports via modifications to the vertical velocity and the vortex stretching term dw/dz. Consequently, errors propagate westward resulting in longer predictability times in the interior ocean compared with the eastern boundary. Another source of divergence is transport anomalies propagating along the Gulf Stream (and other boundary currents). The propagation mechanism seems to be predominantly advection by mean currents, and we show that the arrival of westward propagating waves can trigger development of these anomalies. The mean state of the AMOC has a small effect on interannual predictability in the subtropical gyre, most likely because eastern boundary windstress curl predictability is not strongly dependent on the state of the AMOC in the subtropics. Eastern boundary windstress curl was more predictable at 45°N when the AMOC was in a strongly decreasing state, but, unlike at 30°N, no mechanism was found linking windstress curl fluctuations with deep transports.",
+        link: "https://doi.org/10.1029/2012JC008334"
+      },
+      {
+        doi: "10.1111/j.1467-9876.2012.01042.x",
+        category: "uncertainty",
+        tag: "Article · 2012",
+        title: "Fast linked analyses for scenario-based hierarchies",
+        authors: "D Williamson, M Goldstein, <strong>A Blaker</strong>",
+        journal: "Journal of the Royal Statistical Society Series C: Applied Statistics 61 (5), 2012",
+        abstract: "When using computer models to provide policy support it is normal to encounter ensembles that test only a handful of feasible or idealized decision scenarios. We present a new methodology for performing multilevel emulation of a complex model as a function of any decision within a predefined class that makes specific use of a scenario ensemble of opportunity on a fast or early version of a simulator and a small, well-chosen, design on our current simulator of interest. The method exploits a geometrical approach to Bayesian inference and is designed to be fast, to facilitate detailed diagnostic checking of our emulators by allowing us to carry out many analyses very quickly. Our motivating application involved constructing an emulator for the UK Met Office Hadley Centre coupled climate model HadCM3 as a function of carbon dioxide forcing, which was part of a ‘RAPID’ programme deliverable to the UK Met Office funded by the Natural Environment Research Council. Our application involved severe time pressure as well as limited access to runs of HadCM3 and a scenario ensemble of opportunity on a lower resolution version of the model.",
+        link: "https://doi.org/10.1111/j.1467-9876.2012.01042.x"
+      },
+      {
+        doi: "10.5194/os-9-805-2013",
+        category: "circulation, modelling",
+        tag: "Article · 2012",
+        title: "Chaotic variability of the meridional overturning circulation on subannual to interannual timescales.",
+        authors: "JJM Hirschi, <strong>AT Blaker</strong>, B Sinha, A Coward, B de Cuevas, S Alderson, ...",
+        journal: "Ocean Science Discussions 9 (5), 2012",
+        abstract: "Observations and numerical simulations have shown that the meridional overturning circulation (MOC) exhibits substantial variability on sub- to interannual timescales. This variability is not fully understood. In particular it is not known what fraction of the MOC variability is caused by processes such as mesoscale ocean eddies and internal waves which are ubiquitous in the ocean. Here we analyse twin experiments performed with a global ocean model at eddying (1/4°) and non-eddying (1°) resolutions. The twin experiments are forced with the same surface fluxes for the 1958 to 2001 period but start from different initial conditions. Our results show that on subannual to interannual timescales a large fraction of MOC variability directly reflects variability in the surface forcing. Nevertheless, in the eddy-permitting case there is an initial condition dependent MOC variability (hereinafter referred to as “chaotic” variability) of several Sv (1 Sv = 10<sup>6</sup> m<sup>3</sup> s<sup>-1</sup>) in the Atlantic and the Indo-Pacific. In the Atlantic the chaotic MOC variability represents up to 30% of the total variability at the depths where the maximum MOC occurs. In comparison the chaotic MOC variability is only 5-10% in the non-eddying case. The surface forcing being identical in the twin experiments suggests that mesoscale ocean eddies are the most likely cause for the increased chaotic MOC variability in the eddying case. The exact formation time of eddies is determined by the initial conditions which are different in the two accordance with and as a consequence the mesoscale eddy field is decorrelated in the twin experiments. In regions where eddy activity is high in the eddy-permitting model, the correlation of sea surface height variability in the twin runs is close to zero. In the non-eddying case in contrast, we find high correlations (0.9 or higher) over most regions. Looking at the sub- and interannual MOC components separately reveals that despite the amplitude of the chaotic variability being larger on subannual than on interannual timescales, the ratio of chaotic to total MOC variability is larger on interannual than on subannual timescales.",
+        link: "https://doi.org/10.5194/os-9-805-2013"
+      },
+      {
+        doi: "10.1007/s00382-012-1432-y",
+        category: "climate, modelling",
+        tag: "Article · 2012",
+        title: "Decadal-timescale changes of the Atlantic overturning circulation and climate in a coupled climate model with a hybrid-coordinate ocean component",
+        authors: "A Persechino, R Marsh, B Sinha, AP Megann, <strong>AT Blaker</strong>, AL New",
+        journal: "Climate dynamics 39 (3), 1021-1042, 2012",
+        abstract: "A wide range of statistical tools is used to investigate the decadal variability of the Atlantic Meridional Overturning Circulation (AMOC) and associated key variables in a climate model (CHIME, Coupled Hadley-Isopycnic Model Experiment), which features a novel ocean component. CHIME is as similar as possible to the 3rd Hadley Centre Coupled Model (HadCM3) with the important exception that its ocean component is based on a hybrid vertical coordinate. Power spectral analysis reveals enhanced AMOC variability for periods in the range 15–30 years. Strong AMOC conditions are associated with: (1) a Sea Surface Temperature (SST) anomaly pattern reminiscent of the Atlantic Multi-decadal Oscillation (AMO) response, but associated with variations in a northern tropical-subtropical gradient; (2) a Surface Air Temperature anomaly pattern closely linked to SST; (3) a positive North Atlantic Oscillation (NAO)-like pattern; (4) a northward shift of the Intertropical Convergence Zone. The primary mode of AMOC variability is associated with decadal changes in the Labrador Sea and the Greenland Iceland Norwegian (GIN) Seas, in both cases linked to the tropical activity about 15 years earlier. These decadal changes are controlled by the low-frequency NAO that may be associated with a rapid atmospheric teleconnection from the tropics to the extratropics. Poleward advection of salinity anomalies in the mixed layer also leads to AMOC changes that are linked to processes in the Labrador Sea. A secondary mode of AMOC variability is associated with interannual changes in the Labrador and GIN Seas, through the impact of the NAO on local surface density.",
+        link: "https://doi.org/10.1007/s00382-012-1432-y"
+      },
+      {
+        doi: "10.1029/2011GL050485",
+        category: "circulation, climate, modelling",
+        tag: "Article · 2012",
+        title: "Mountain ranges favour vigorous Atlantic meridional overturning",
+        authors: "B Sinha, <strong>AT Blaker</strong>, J J-M Hirschi, S Bonham, M Brand, S Josey, RS Smith, ...",
+        journal: "Geophysical Research Letters 39 (2), 2012",
+        abstract: "We use a global Ocean-Atmosphere General Circulation Model (OAGCM) to show that the major mountain ranges of the world have a significant role in maintenance of the Atlantic Meridional Overturning Circulation (AMOC). A simulation with mountains has a maximum AMOC of 18 Sv (1 Sv = 10<sup>6</sup> m<sup>3</sup> s<sup>-1</sup>) compared with ∼0 Sv for a simulation without mountains. Atlantic heat transport at 25°N is 1.1 PW with mountains compared to 0.2 PW without. The difference in AMOC is due to major changes in surface heat and freshwater (FW) fluxes over the Atlantic. In the Pacific changed surface fluxes lead to a meridional overturning circulation of 10 Sv. Our results suggest that the effects of mountains on the large-scale atmospheric circulation is to force the ocean towards a state with a vigorous AMOC and with no overturning in the Pacific.",
+        link: "https://doi.org/10.1029/2011GL050485"
+      },
+      {
+        doi: "10.1016/j.ocemod.2011.11.008",
+        category: "circulation, modelling",
+        tag: "Article · 2012",
+        title: "Large near-inertial oscillations of the Atlantic meridional overturning circulation",
+        authors: "<strong>Adam T. Blaker</strong>, Jo\u00ebl J-M. Hirschi, Bablu Sinha, Beverly de Cuevas, Steven Alderson, Andrew Coward, Gurvan Madec",
+        journal: "Ocean Modelling, 42",
+        abstract: "The Atlantic meridional overturning circulation (AMOC) is a key contributor to Europe’s mild climate. Both observations and models suggest that the AMOC strength varies on a wide range of timescales. Here we show the existence of previously unreported large near inertial AMOC oscillations in a high resolution ocean model. Peak-to-peak these oscillations can exceed 50 Sv (50 · 10<sup>6</sup> m<sup>3</sup> s<sup>−1</sup>) in one day. The AMOC oscillations are caused by equatorward propagating near-inertial gravity waves (NIGWs) which are forced by temporally changing wind forcing. The existence of NIGWs in the ocean is supported by observations, and a significant fraction of the ocean’s kinetic energy is associated with the near inertial frequencies. Our results also suggest that the NIGW-driven MOC variability would be near invisible to contemporary AMOC observing systems such as the RAPID MOC system at 26.5°N.",
+        link: "https://doi.org/10.1016/j.ocemod.2011.11.008"
+      },
+      {
+        doi: "10.5194/os-7-471-2011",
+        category: "circulation, modelling",
+        tag: "Article · 2011",
+        title: "High frequency variability of the Atlantic meridional overturning circulation",
+        authors: "B Balan Sarojini, JM Gregory, R Tailleux, GR Bigg, <strong>AT Blaker</strong>, ...",
+        journal: "Ocean Science 7 (4), 471-486, 2011",
+        abstract: "We compare the variability of the Atlantic meridional overturning circulation (AMOC) as simulated by the coupled climate models of the RAPID project, which cover a wide range of resolution and complexity, and observed by the RAPID/MOCHA array at about 26°N. We analyse variability on a range of timescales, from five-daily to interannual. In models of all resolutions there is substantial variability on timescales of a few days; in most AOGCMs the amplitude of the variability is of somewhat larger magnitude than that observed by the RAPID array, while the time-mean is within about 10% of the observational estimate. The amplitude of the simulated annual cycle is similar to observations, but the shape of the annual cycle shows a spread among the models. A dynamical decomposition shows that in the models, as in observations, the AMOC is predominantly geostrophic (driven by pressure and sea-level gradients), with both geostrophic and Ekman contributions to variability, the latter being exaggerated and the former underrepresented in models. Other ageostrophic terms, neglected in the observational estimate, are small but not negligible. The time-mean of the western boundary current near the latitude of the RAPID/MOCHA array has a much wider model spread than the AMOC does, indicating large differences among models in the simulation of the wind-driven gyre circulation, and its variability is unrealistically small in the models. In many RAPID models and in models of the Coupled Model Intercomparison Project Phase 3 (CMIP3), interannual variability of the maximum of the AMOC wherever it lies, which is a commonly used model index, is similar to interannual variability in the AMOC at 26°N. Annual volume and heat transport timeseries at the same latitude are well-correlated within 15–45°N, indicating the climatic importance of the AMOC. In the RAPID and CMIP3 models, we show that the AMOC is correlated over considerable distances in latitude, but not the whole extent of the North Atlantic; consequently interannual variability of the AMOC at 50°N, where it is particularly relevant to European climate, is not well-correlated with that of the AMOC at 26°N, where it is monitored by the RAPID/MOCHA array.",
+        link: "https://doi.org/10.5194/os-7-471-2011"
+      },
+      {
+        doi: "10.1175/2010JCLI3394.1",
+        category: "modelling, climate",
+        tag: "Article · 2010",
+        title: "The sensitivity of a coupled climate model to its ocean component",
+        authors: "AP Megann, AL New, <strong>AT Blaker</strong>, B Sinha",
+        journal: "Journal of Climate 23, 5126-5150, 2010",
+        abstract: "The control climates of two coupled climate models are intercompared. The first is the third climate configuration of the Met Office Unified Model (HadCM3), while the second, the Coupled Hadley–Isopycnic Model Experiment (CHIME), is identical to the first except for the replacement of its ocean component by the Hybrid-Coordinate Ocean Model (HYCOM). Both models possess realistic and similar ocean heat transports and overturning circulation. However, substantial differences in the vertical structure of the two ocean components are observed, some of which are directly attributed to their different vertical coordinate systems. In particular, the sea surface temperature (SST) in CHIME is biased warm almost everywhere, particularly in the North Atlantic subpolar gyre, in contrast to HadCM3, which is biased cold except in the Southern Ocean. Whereas the HadCM3 ocean warms from just below the surface down to 1000-m depth, a similar warming in CHIME is more pronounced but shallower and confined to the upper 400 m, with cooling below this. This is particularly apparent in the subtropical thermoclines, which become more diffuse in HadCM3, but sharper in CHIME. This is interpreted as resulting from a more rigorously controlled diapycnal mixing in the interior isopycnic ocean in CHIME. Lower interior mixing is also apparent in the better representation and maintenance of key water masses in CHIME, such as Subantarctic Mode Water, Antarctic Intermediate Water, and North Atlantic Deep Water. Finally, the North Pacific SST cold error in HadCM3 is absent in CHIME, and may be related to a difference in the separation position of the Kuroshio. Disadvantages of CHIME include a nonconservation of heat equivalent to 0.5 W m<sup>−2</sup> globally, and a warming and salinification of the northwestern Atlantic.",
+        link: "https://doi.org/10.1175/2010JCLI3394.1"
+      },
+      {
+        doi: "10.1029/2008GL036976",
+        category: "circulation, modelling",
+        tag: "Article · 2009",
+        title: "Rapid ocean wave teleconnections linking Antarctic salinity anomalies to the equatorial ocean‐atmosphere system",
+        authors: "CP Atkinson, NC Wells, <strong>AT Blaker</strong>, B Sinha, VO Ivchenko",
+        journal: "Geophysical research letters 36 (L08603), 2009",
+        abstract: "The coupled climate model FORTE is used to investigate rapid ocean teleconnections between the Southern Ocean and equatorial Pacific Ocean. Salinity anomalies located throughout the Southern Ocean generate barotropic signals that propagate along submerged topographic features and result in the growth of baroclinic energy anomalies around Indonesia and the tropical Pacific. Anomalies in the Ross, Bellingshausen and Amundsen Seas exchange the most barotropic kinetic energy between high and low latitudes. In the equatorial Pacific, baroclinic Kelvin waves are excited which propagate eastwards along the thermocline, resulting in SST anomalies in the central and eastern Pacific. SST anomalies are subsequently amplified to magnitudes of 1.25°C by air-sea interaction, which could potentially influence other coupled Pacific phenomena.",
+        link: "https://doi.org/10.1029/2008GL036976"
+      },
+      {
+        doi: "10.1029/2007JC004625",
+        category: "circulation, modelling, climate",
+        tag: "Article · 2008",
+        title: "Response of the Denmark Strait overflow to Nordic Seas heat loss",
+        authors: "JP Grist, SA Josey, B Sinha, <strong>AT Blaker</strong>",
+        journal: "Journal of Geophysical Research: Oceans 113 (C09019), 2008",
+        abstract: "The impact of extreme Nordic Seas heat loss on Denmark Strait (DS) dense water transport is examined in (1) control runs of the Hadley Centre HadCM3 and HadGEM1 coupled climate models and (2) perturbation experiments with the fast coupled model FORTE that allow heat flux effects to be isolated from wind stress. All three models show an approximately linear increase in southward DS transport of cold dense water with increasing Nordic Seas winter heat loss in the range −80 to −250 Wm<sup>−2</sup>. The propagation of the cold anomaly from the Nordic Seas source along a trajectory through the DS and into the Irminger Basin is also examined. A common response time is found with the strongest decrease in DS temperature occurring within 8–12 months of the heat loss signal. Our results show that Nordic Seas heat loss must be considered in addition to other processes in understanding DS variability.",
+        link: "https://doi.org/10.1029/2007JC004625"
+      },
+      {
+        doi: "10.1029/2005GL025474",
+        category: "modelling, climate",
+        tag: "Article · 2006",
+        title: "Identifying the roles of the ocean and atmosphere in creating a rapid equatorial response to a Southern Ocean anomaly",
+        authors: "<strong>AT Blaker</strong>, B Sinha, VO Ivchenko, NC Wells, VB Zalesny",
+        journal: "Geophysical Research Letters 33 (L06720), 2006",
+        abstract: "Recent research has identified a rapid ocean response mechanism to salinity anomalies in the Southern Ocean using an idealised ocean model. Here we examine the relative importance of the ocean and atmosphere in creating an equatorial response to a Southern Ocean anomaly. Using a coupled climate model with realistic bottom topography and land relief, two rapid teleconnections are produced from a high latitude anomaly. An equatorial ocean response can be seen after 30 days. The mechanism producing this response is shown to rely on barotropic and baroclinic oceanic wave propagation. A second, atmospheric, response is seen in the Northern Hemisphere (NH) high latitudes, driven by atmospheric Rossby waves. The ocean quickly responds to the atmospheric signal above it, resulting in sea surface temperature anomalies at NH high latitudes.",
+        link: "https://doi.org/10.1029/2005GL025474"
+      }
+    ];
+
+    // Render publications
+    const pubGrid = document.getElementById('pubGrid');
+
+    function renderPubs(filter = 'all') {
+      pubGrid.innerHTML = '';
+      const filtered = filter === 'all' ? publications : publications.filter(p => {
+        if (Array.isArray(p.category)) {
+          return p.category.includes(filter);
+        }
+        if (typeof p.category === 'string') {
+          return p.category.split(/[\s,]+/).includes(filter);
+        }
+        return false;
+      });
+
+      filtered.forEach((p, index) => {
+        const item = document.createElement('div');
+        item.className = 'pub-item fade-in';
+        item.setAttribute('data-id', index);
+        // Find index in main list to match click handler
+        <!--const mainIndex = publications.findIndex(pub => pub.doi === p.doi);-->
+        const mainIndex = publications.indexOf(p);
+        item.setAttribute('data-index', mainIndex);
+
+        item.innerHTML = `
+          <div>
+            <div class="pub-tag">${p.tag}</div>
+            <h4>${p.title}</h4>
+            <p class="pub-authors">${p.authors}</p>
+            <p class="pub-journal">${p.journal}</p>
+          </div>
+        `;
+
+        pubGrid.appendChild(item);
+        // Observe new items
+        observer.observe(item);
+      });
+
+      // Attach click events
+      document.querySelectorAll('.pub-item').forEach(el => {
+        el.addEventListener('click', () => {
+          const idx = parseInt(el.getAttribute('data-index'));
+          openModal(idx);
+        });
+      });
+    }
+
+    // Modal logic
+    var overlay = document.getElementById('pubModalOverlay');
+    var closeBtn = document.getElementById('pubModalClose');
+
+    function openModal(idx) {
+      var p = publications[idx];
+      document.getElementById('pmTag').textContent = p.tag;
+      document.getElementById('pmTitle').textContent = p.title;
+      document.getElementById('pmAuthors').innerHTML = p.authors;
+      document.getElementById('pmJournal').textContent = p.journal;
+      document.getElementById('pmAbstract').innerHTML = p.abstract;
+
+      var linkWrap = document.getElementById('pmLinkWrap');
+      if (p.link) {
+        linkWrap.innerHTML = `<a href="${p.link}" target="_blank" class="pub-modal-link"><i class="fas fa-external-link-alt"></i> View Article</a>`;
+      } else {
+        linkWrap.innerHTML = '';
+      }
+
+      overlay.classList.add('active');
+    }
+
+    function closeModal() {
+      overlay.classList.remove('active');
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeModal();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+    });
+
+    // Filter events
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.getAttribute('data-filter');
+        renderPubs(filter);
+      });
+    });
+
+    // Initial render
+    renderPubs('all');
+  </script>
+</body>
+
 </html>
